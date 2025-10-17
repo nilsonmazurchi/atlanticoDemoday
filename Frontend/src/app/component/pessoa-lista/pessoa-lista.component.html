@@ -1,0 +1,40 @@
+<!-- Tabela para exibir a lista de pessoas -->
+<div class="container px-4 text">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Endereço</th>
+        <th>Numero</th>
+        <th>Complemento</th>
+        <th>CEP</th>
+        <th>Cidade</th>
+        <th>UF</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Laço que percorre a lista de pessoas e exibe cada item na tabela -->
+      <tr *ngFor="let pessoa of pessoas">
+        <td>{{ pessoa.nome }}</td>
+        <td>{{ pessoa.endereco }}</td>
+        <td>{{ pessoa.numero }}</td>
+        <td>{{ pessoa.complemento }}</td>
+        <td>{{ pessoa.cep }}</td>
+        <td>{{ pessoa.cidade }}</td>
+        <td>{{ pessoa.uf }}</td>
+        <td>
+          <!-- Botão de editar para a pessoa, acionando o método editarPessoa com o ID -->
+          <button class="btn btn-warning btn-sm me-2" (click)="selecionarPessoa(pessoa)">Editar</button>
+          <!-- Botão de excluir para a pessoa, acionando o método excluirPessoa com o ID -->
+          <button class="btn btn-danger" (click)="excluirPessoa(pessoa.id!)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Exibir formulário de edição quando uma pessoa for selecionada -->
+  <app-pessoa-cadastro *ngIf="pessoaSelecionada" [pessoa]="pessoaSelecionada" (salvo)="aoSalvarPessoa()"></app-pessoa-cadastro>
+
+  <!-- Botão para voltar à página inicial -->
+  <button class="btn btn-secondary mt-3" *ngIf="!pessoaService.getModoEdicao()" (click)="voltarParaHome()">Voltar</button>
+  </div>

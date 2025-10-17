@@ -1,0 +1,35 @@
+2025-10-17 13:25:42.414 [info] [main] Log level: Info
+2025-10-17 13:25:42.417 [info] [main] Validating found git in: "C:\Program Files\Git\cmd\git.exe"
+2025-10-17 13:25:42.420 [info] [main] Using git "2.51.0.windows.2" from "C:\Program Files\Git\cmd\git.exe"
+2025-10-17 13:25:42.422 [info] [Model][doInitialScan] Initial repository scan started
+2025-10-17 13:25:42.423 [info] > git rev-parse --show-toplevel [809ms]
+2025-10-17 13:25:42.424 [info] fatal: detected dubious ownership in repository at '//wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory '%(prefix)///wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+2025-10-17 13:25:42.458 [info] > git rev-parse --show-toplevel [3234ms]
+2025-10-17 13:25:42.463 [info] fatal: detected dubious ownership in repository at '//wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory '%(prefix)///wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+2025-10-17 13:25:44.225 [info] > git rev-parse --show-toplevel [1304ms]
+2025-10-17 13:25:44.234 [info] fatal: detected dubious ownership in repository at '//wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory '%(prefix)///wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+2025-10-17 13:25:47.108 [info] > git rev-parse --show-toplevel [2131ms]
+2025-10-17 13:25:47.110 [info] fatal: detected dubious ownership in repository at '//wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory '%(prefix)///wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+2025-10-17 13:25:48.022 [info] > git rev-parse --show-toplevel [818ms]
+2025-10-17 13:25:48.024 [info] fatal: detected dubious ownership in repository at '//wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory '%(prefix)///wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+2025-10-17 13:25:48.089 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (1)
+2025-10-17 13:25:49.383 [info] > git rev-parse --show-toplevel [1193ms]
+2025-10-17 13:25:49.385 [info] fatal: detected dubious ownership in repository at '//wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory '%(prefix)///wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot'

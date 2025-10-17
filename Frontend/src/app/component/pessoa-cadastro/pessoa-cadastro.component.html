@@ -1,0 +1,82 @@
+<!-- Formulário de cadastro de pessoas -->
+<form #pessoaForm="ngForm" (ngSubmit)="cadastrarPessoa(pessoaForm)">
+  <div class="container px-4 text">
+
+    <!-- Campo Nome -->
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" [(ngModel)]="pessoa.nome" name="nome" class="form-control"
+             required pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" #nome="ngModel">
+      <!-- Validações e mensagens de erro -->
+      <div *ngIf="nome.touched || pessoaForm.submitted" class="text-danger">
+        <small *ngIf="nome.errors?.['required']">Nome é obrigatório.</small>
+        <small *ngIf="nome.errors?.['pattern']">Nome não pode conter números ou caracteres especiais.</small>
+      </div>
+    </div>
+
+    <!-- Campo CEP -->
+    <div class="form-group">
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" [(ngModel)]="pessoa.cep" name="cep"
+             class="form-control" required pattern="^[0-9]{8}$" #cep="ngModel" (input)="onCepInput()">
+      <!-- Mensagem de erro para CEP inválido -->
+      <div *ngIf="cep.invalid && cep.touched" class="text-danger">
+        O CEP deve conter exatamente 8 dígitos numéricos.
+      </div>
+    </div>
+
+    <!-- Campo Endereço -->
+    <div class="form-group">
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" [(ngModel)]="pessoa.endereco" name="endereco" class="form-control" required>
+    </div>
+
+    <!-- Campo Número -->
+    <div class="form-group">
+      <label for="numero">Número</label>
+      <input type="text" id="numero" [(ngModel)]="pessoa.numero" name="numero" class="form-control"
+             required pattern="^[0-9]+$" #numero="ngModel">
+      <!-- Validações e mensagens de erro -->
+      <div *ngIf="numero.invalid && numero.touched" class="text-danger">
+        <small *ngIf="numero.errors?.['required']">Número é obrigatório.</small>
+        <small *ngIf="numero.errors?.['pattern']">Número só pode conter dígitos numéricos.</small>
+      </div>
+    </div>
+
+    <!-- Campo Complemento -->
+    <div class="form-group">
+      <label for="complemento">Complemento</label>
+      <input type="text" id="complemento" [(ngModel)]="pessoa.complemento" name="complemento" class="form-control">
+    </div>
+
+    <!-- Campo Bairro -->
+    <div class="form-group">
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro" [(ngModel)]="pessoa.bairro" name="bairro" class="form-control" required>
+    </div>
+
+    <!-- Campo Cidade -->
+    <div class="form-group">
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" [(ngModel)]="pessoa.cidade" name="cidade" class="form-control" required>
+    </div>
+
+    <!-- Campo UF (Estado) -->
+    <div class="form-group">
+      <label for="uf">UF</label>
+      <input type="text" id="uf" [(ngModel)]="pessoa.uf" name="uf" class="form-control" required>
+    </div>
+  </div>
+
+  <!-- Botões de ação -->
+  <div class="container px-4 text-center">
+    <div class="row gx-5 mt-4">
+      <!-- Botão de envio do formulário, desativado se o formulário for inválido -->
+      <button type="submit" class="btn btn-primary" [disabled]="!pessoaForm.form.valid">Salvar</button>
+    </div>
+    <div class="row gx-5 mt-4">
+      <!-- Botão para voltar à página inicial -->
+      <button type="button" class="btn btn-primary" (click)="voltarParaHome()">Voltar</button>
+    </div>
+  </div>
+</form>

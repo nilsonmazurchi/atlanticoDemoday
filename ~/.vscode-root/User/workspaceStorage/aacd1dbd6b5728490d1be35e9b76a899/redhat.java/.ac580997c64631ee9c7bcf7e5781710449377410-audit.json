@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 2
+    },
+    "auditLog": "\\\\wsl.localhost\\Ubuntu-22.04\\root\\atlantico\\demoday\\cadastroPessoa-Minsait-Backend-JavaSpringBoot\\~\\.vscode-root\\User\\workspaceStorage\\aacd1dbd6b5728490d1be35e9b76a899\\redhat.java\\.ac580997c64631ee9c7bcf7e5781710449377410-audit.json",
+    "files": [
+        {
+            "date": 1760718394324,
+            "name": "\\\\wsl.localhost\\Ubuntu-22.04\\root\\atlantico\\demoday\\cadastroPessoa-Minsait-Backend-JavaSpringBoot\\~\\.vscode-root\\User\\workspaceStorage\\aacd1dbd6b5728490d1be35e9b76a899\\redhat.java\\client.log.2025-10-17",
+            "hash": "7ec392ec619fe25b8ad21f4d9b8cd83c149f756b65e391af71c0999097fbb450"
+        }
+    ],
+    "hashType": "sha256"
+}

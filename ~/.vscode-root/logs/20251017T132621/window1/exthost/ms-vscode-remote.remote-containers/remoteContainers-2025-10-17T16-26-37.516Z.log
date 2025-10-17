@@ -1,0 +1,46 @@
+[2025-10-17T16:26:49.057Z] Dev Containers 0.427.0 in VS Code 1.105.0 (03c265b1adee71ac88f833e065f7bb956b60550a).
+[2025-10-17T16:26:49.057Z] Start: Run: wsl -d Ubuntu-22.04 -e wslpath -u \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot
+[2025-10-17T16:27:10.716Z] Stop (21659 ms): Run: wsl -d Ubuntu-22.04 -e wslpath -u \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot
+[2025-10-17T16:27:10.724Z] Start: Run: wsl -d Ubuntu-22.04 -e /bin/sh -c cd '/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot' && /bin/sh
+[2025-10-17T16:27:10.773Z] Start: Run in host: id -un
+[2025-10-17T16:27:11.164Z] root
+[2025-10-17T16:27:11.173Z] 
+[2025-10-17T16:27:11.185Z] Stop (412 ms): Run in host: id -un
+[2025-10-17T16:27:11.196Z] Start: Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'root' || grep -E '^root|^[^:]*:[^:]*:root:' /etc/passwd || true)
+[2025-10-17T16:27:11.207Z] Stop (11 ms): Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'root' || grep -E '^root|^[^:]*:[^:]*:root:' /etc/passwd || true)
+[2025-10-17T16:27:11.207Z] Start: Run in host: echo ~
+[2025-10-17T16:27:11.209Z] /root
+[2025-10-17T16:27:11.210Z] 
+[2025-10-17T16:27:11.211Z] Stop (4 ms): Run in host: echo ~
+[2025-10-17T16:27:11.212Z] Start: Run in host: test -f '/root/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/node'
+[2025-10-17T16:27:11.258Z] 
+[2025-10-17T16:27:11.259Z] 
+[2025-10-17T16:27:11.259Z] Exit code 1
+[2025-10-17T16:27:11.260Z] Stop (48 ms): Run in host: test -f '/root/.vscode-server/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/node'
+[2025-10-17T16:27:11.260Z] Start: Run in host: test -f '/root/.vscode/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/node'
+[2025-10-17T16:27:11.263Z] 
+[2025-10-17T16:27:11.263Z] 
+[2025-10-17T16:27:11.264Z] Exit code 1
+[2025-10-17T16:27:11.264Z] Stop (4 ms): Run in host: test -f '/root/.vscode/cli/servers/Stable-03c265b1adee71ac88f833e065f7bb956b60550a/server/node'
+[2025-10-17T16:27:11.265Z] Start: Run in host: test -f '/root/.vscode-server/bin/03c265b1adee71ac88f833e065f7bb956b60550a/node'
+[2025-10-17T16:27:11.268Z] 
+[2025-10-17T16:27:11.269Z] 
+[2025-10-17T16:27:11.269Z] Stop (4 ms): Run in host: test -f '/root/.vscode-server/bin/03c265b1adee71ac88f833e065f7bb956b60550a/node'
+[2025-10-17T16:27:11.270Z] Start: Run in host: test -f '/root/.vscode-server/bin/03c265b1adee71ac88f833e065f7bb956b60550a/node_modules/node-pty/package.json'
+[2025-10-17T16:27:11.272Z] 
+[2025-10-17T16:27:11.272Z] 
+[2025-10-17T16:27:11.273Z] Stop (3 ms): Run in host: test -f '/root/.vscode-server/bin/03c265b1adee71ac88f833e065f7bb956b60550a/node_modules/node-pty/package.json'
+[2025-10-17T16:27:11.273Z] Start: Run in host: test -f '/root/.vscode-remote-containers/dist/vscode-remote-containers-server-0.427.0.js'
+[2025-10-17T16:27:11.275Z] 
+[2025-10-17T16:27:11.276Z] 
+[2025-10-17T16:27:11.276Z] Stop (3 ms): Run in host: test -f '/root/.vscode-remote-containers/dist/vscode-remote-containers-server-0.427.0.js'
+[2025-10-17T16:27:11.283Z] userEnvProbe: loginInteractiveShell (default)
+[2025-10-17T16:27:11.284Z] userEnvProbe: not found in cache
+[2025-10-17T16:27:11.285Z] userEnvProbe shell: /bin/bash
+[2025-10-17T16:27:11.978Z] userEnvProbe PATHs:
+Probe:     '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/node/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/snap/bin:/usr/lib/jvm/java-21-openjdk-amd64/bin'
+Container: None
+[2025-10-17T16:27:12.283Z] Initializing configuration support...
+[2025-10-17T16:27:12.284Z] Internal initialization of dev container support package...
+[2025-10-17T16:27:12.287Z] Start: Run: wsl -d Ubuntu-22.04 -e wslpath -u \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot
+[2025-10-17T16:27:12.810Z] Stop (523 ms): Run: wsl -d Ubuntu-22.04 -e wslpath -u \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot

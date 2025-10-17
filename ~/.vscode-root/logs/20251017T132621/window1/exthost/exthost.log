@@ -1,0 +1,339 @@
+2025-10-17 13:26:30.886 [info] Extension host with pid 22724 started
+2025-10-17 13:26:30.887 [info] Skipping acquiring lock for \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User\workspaceStorage\aacd1dbd6b5728490d1be35e9b76a899.
+2025-10-17 13:26:31.372 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-10-17 13:26:31.412 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-10-17 13:26:31.538 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-10-17 13:26:31.547 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2025-10-17 13:26:31.618 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2025-10-17 13:26:31.632 [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag, startup: true, activationEvent: '*'
+2025-10-17 13:26:31.688 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2025-10-17 13:26:31.947 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-10-17 13:26:32.797 [info] ExtensionService#_doActivateExtension vscjava.vscode-maven, startup: true, activationEvent: 'workspaceContains:**/pom.xml'
+2025-10-17 13:26:33.257 [info] ExtensionService#_doActivateExtension redhat.java, startup: true, activationEvent: 'workspaceContains:*/pom.xml,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts,*/.classpath'
+2025-10-17 13:26:35.487 [warning] [redhat.java] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[java]', provide the URI of a resource or 'null' for any resource.
+2025-10-17 13:26:35.544 [info] Eager extensions activated
+2025-10-17 13:26:35.579 [error] Error: EISDIR: illegal operation on a directory, watch '//wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot/~/.vscode-root/User/workspaceStorage/aacd1dbd6b5728490d1be35e9b76a899/redhat.java'
+    at FSWatcher.<computed> (node:internal/fs/watchers:254:19)
+    at Object.watch (node:fs:2563:36)
+    at O (c:\Users\Usuario\.vscode\extensions\redhat.java-1.46.0-win32-x64\dist\extension.js:2:160605)
+    at c:\Users\Usuario\.vscode\extensions\redhat.java-1.46.0-win32-x64\dist\extension.js:2:161869
+    at e.exports._watchWithNodeFs (c:\Users\Usuario\.vscode\extensions\redhat.java-1.46.0-win32-x64\dist\extension.js:2:162338)
+    at e.exports._handleDir (c:\Users\Usuario\.vscode\extensions\redhat.java-1.46.0-win32-x64\dist\extension.js:2:165001)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at e.exports._addToNodeFs (c:\Users\Usuario\.vscode\extensions\redhat.java-1.46.0-win32-x64\dist\extension.js:2:165663)
+    at c:\Users\Usuario\.vscode\extensions\redhat.java-1.46.0-win32-x64\dist\extension.js:2:147369
+    at async Promise.all (index 0)
+2025-10-17 13:26:35.583 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:35.590 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:35.624 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:35.873 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:35.959 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:36.093 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:36.483 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:36.719 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:36.856 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:36.887 [info] ExtensionService#_doActivateExtension streetsidesoftware.code-spell-checker, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:37.139 [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:37.771 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'api', root cause: eamodio.gitlens
+2025-10-17 13:26:39.128 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-10-17 13:26:40.058 [info] ExtensionService#_doActivateExtension alexiv.vscode-angular2-files, startup: false, activationEvent: '*'
+2025-10-17 13:26:40.287 [info] ExtensionService#_doActivateExtension Codeium.codeium, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:41.906 [info] ExtensionService#_doActivateExtension cyrilletuzi.angular-schematics, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:42.486 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:42.535 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:42.539 [info] ExtensionService#_doActivateExtension fernandoescolar.vscode-solution-explorer, startup: false, activationEvent: '*'
+2025-10-17 13:26:42.592 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:42.645 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:46.262 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:47.292 [info] ExtensionService#_doActivateExtension Gruntfuggly.todo-tree, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:47.370 [info] ExtensionService#_doActivateExtension infinity1207.angular2-switcher, startup: false, activationEvent: '*'
+2025-10-17 13:26:47.379 [info] ExtensionService#_doActivateExtension john-crowson.angular-file-changer, startup: false, activationEvent: '*'
+2025-10-17 13:26:47.384 [info] ExtensionService#_doActivateExtension mcu-debug.debug-tracker-vscode, startup: false, activationEvent: 'onStartupFinished', root cause: marus25.cortex-debug
+2025-10-17 13:26:47.392 [info] ExtensionService#_doActivateExtension mcu-debug.peripheral-viewer, startup: false, activationEvent: 'onStartupFinished', root cause: marus25.cortex-debug
+2025-10-17 13:26:47.429 [info] ExtensionService#_doActivateExtension matheusq94.TFS, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:47.433 [info] ExtensionService#_doActivateExtension mechatroner.rainbow-csv, startup: false, activationEvent: 'onLanguage:plaintext'
+2025-10-17 13:26:47.444 [info] ExtensionService#_doActivateExtension mhutchie.git-graph, startup: false, activationEvent: '*'
+2025-10-17 13:26:47.493 [info] ExtensionService#_doActivateExtension mtxr.sqltools, startup: false, activationEvent: '*'
+2025-10-17 13:26:47.578 [info] ExtensionService#_doActivateExtension oderwat.indent-rainbow, startup: false, activationEvent: '*'
+2025-10-17 13:26:47.583 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:47.608 [info] ExtensionService#_doActivateExtension ryanluker.vscode-coverage-gutters, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:47.663 [info] ExtensionService#_doActivateExtension SonarSource.sonarlint-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:48.282 [info] ExtensionService#_doActivateExtension usernamehw.errorlens, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:48.295 [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion, startup: false, activationEvent: '*'
+2025-10-17 13:26:48.573 [error] Error: Extension 'vscode.git' is not known or not activated
+    at qb.getActivatedExtension (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:10686)
+    at SZ.getExtensionExports (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11004)
+    at ch.get exports [as exports] (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:24622)
+    at c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4171046
+    at new Promise (<anonymous>)
+    at c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4170840
+    at d (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4163778)
+    at Generator.<anonymous> (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4165120)
+    at Generator.next (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4164207)
+    at i (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4169681)
+    at s (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4169884)
+    at c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4169943
+    at new Promise (<anonymous>)
+    at c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4169824
+    at Object.53201 (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:4171370)
+    at t (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:6328462)
+    at Object.65590 (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:2232156)
+    at t (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:6328462)
+    at Object.49146 (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:2408280)
+    at t (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:6328462)
+    at c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:6329212
+    at Object.<anonymous> (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:6329243)
+    at Module._compile (node:internal/modules/cjs/loader:1714:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1848:10)
+    at Module.load (node:internal/modules/cjs/loader:1448:32)
+    at Module._load (node:internal/modules/cjs/loader:1270:12)
+    at Module.c._load (node:electron/js2c/node_init:2:17993)
+    at Module.e._load (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:5983)
+    at Module.t._load (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:211:22649)
+    at Module.r._load (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:203:26694)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.require (node:internal/modules/cjs/loader:1470:12)
+    at require (node:internal/modules/helpers:147:16)
+    at SZ.Cb (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:242:1253)
+2025-10-17 13:26:48.717 [error] Activating extension alexiv.vscode-angular2-files failed due to an error:
+2025-10-17 13:26:48.718 [error] Error: EISDIR: illegal operation on a directory, watch '\\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot'
+    at FSWatcher.<computed> (node:internal/fs/watchers:254:19)
+    at Object.watch (node:fs:2563:36)
+    at ConfigurationManager.watchConfigFiles (c:\Users\Usuario\.vscode\extensions\alexiv.vscode-angular2-files-1.6.4\out\src\configuration-manager.js:99:16)
+    at c:\Users\Usuario\.vscode\extensions\alexiv.vscode-angular2-files-1.6.4\out\src\extension.js:27:12
+    at Generator.next (<anonymous>)
+    at c:\Users\Usuario\.vscode\extensions\alexiv.vscode-angular2-files-1.6.4\out\src\extension.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (c:\Users\Usuario\.vscode\extensions\alexiv.vscode-angular2-files-1.6.4\out\src\extension.js:4:12)
+    at activate (c:\Users\Usuario\.vscode\extensions\alexiv.vscode-angular2-files-1.6.4\out\src\extension.js:21:12)
+    at Py.kb (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:15303)
+    at Py.jb (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:15048)
+    at file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:13206
+    at Gb.n (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:13382)
+    at Gb.m (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:13345)
+    at Gb.l (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:12801)
+2025-10-17 13:26:49.421 [warning] [redhat.java] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[java]', provide the URI of a resource or 'null' for any resource.
+2025-10-17 13:26:49.959 [info] ExtensionService#_doActivateExtension mcu-debug.memory-view, startup: false, activationEvent: 'onStartupFinished', root cause: marus25.cortex-debug
+2025-10-17 13:26:50.138 [info] ExtensionService#_doActivateExtension mcu-debug.rtos-views, startup: false, activationEvent: 'onStartupFinished', root cause: marus25.cortex-debug
+2025-10-17 13:26:50.227 [info] ExtensionService#_doActivateExtension mtxr.sqltools-driver-sqlite, startup: false, activationEvent: '*'
+2025-10-17 13:26:55.432 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2025-10-17 13:26:56.404 [info] ExtensionService#_doActivateExtension marus25.cortex-debug, startup: false, activationEvent: 'onStartupFinished'
+2025-10-17 13:26:58.717 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-10-17 13:26:58.837 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-10-17 13:26:58.962 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-10-17 13:27:03.048 [warning] DiagnosticCollection with name 'eslint' does already exist.
+2025-10-17 13:27:03.061 [error] Error: chatParticipant must be declared in package.json: claude-code
+    at sqt.$registerAgent (vscode-file://vscode-app/c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:509:5906)
+2025-10-17 13:27:08.483 [error] Error: GitHubLoginFailed
+    at t9._authShowWarnings (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:18344)
+    at t9.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:16221)
+    at rH.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:25840)
+    at Cy._fetchModels (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:2948:4925)
+    at Cy.getAllChatModels (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:2948:2686)
+    at jG.getAllChatEndpoints (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:2948:16344)
+2025-10-17 13:27:53.787 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-10-17 13:34:31.310 [info] Extension host terminating: renderer closed the MessagePort
+2025-10-17 13:34:31.364 [error] An error occurred when disposing the subscriptions for extension 'Codeium.codeium':
+2025-10-17 13:34:31.368 [error] Error: EBUSY: resource busy or locked, unlink 'C:\Users\Usuario\AppData\Local\Temp\eb45036f-3ed2-4cff-8b1a-d7d1fad4ef33\codeium\manager\locks\child_lock_1760718432467881400_2663062713324401779'
+    at unlinkSync (node:fs:1966:11)
+    at _unlinkSync (node:internal/fs/rimraf:215:14)
+    at rimrafSync (node:internal/fs/rimraf:196:7)
+    at node:internal/fs/rimraf:254:9
+    at Array.forEach (<anonymous>)
+    at _rmdirSync (node:internal/fs/rimraf:251:7)
+    at rimrafSync (node:internal/fs/rimraf:194:7)
+    at node:internal/fs/rimraf:254:9
+    at Array.forEach (<anonymous>)
+    at _rmdirSync (node:internal/fs/rimraf:251:7)
+    at rimrafSync (node:internal/fs/rimraf:194:7)
+    at rmSync (node:fs:1248:10)
+    at Object.q [as dispose] (c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\extension.js:2:3822087)
+    at Hi (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+    at E2.b (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:15119)
+    at E2.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1227)
+    at SZ.eb (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11992)
+    at file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9947
+    at Array.map (<anonymous>)
+    at SZ.$ (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9935)
+    at SZ.terminate (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10178)
+    at H3.terminate (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+    at Ss (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:10409)
+    at MessagePortMain.<anonymous> (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:6948)
+    at MessagePortMain.emit (node:events:519:28)
+    at MessagePortMain.emit (node:domain:489:12)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-10-17 13:34:31.382 [error] An error occurred when disposing the subscriptions for extension 'eamodio.gitlens':
+2025-10-17 13:34:31.384 [error] TypeError: Cannot read properties of undefined (reading 'dispose')
+    at Object.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:142:122634)
+    at $0.<anonymous> (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24558)
+    at $0.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at Object.dispose (c:\Users\Usuario\.vscode\extensions\eamodio.gitlens-17.6.2\dist\gitlens.js:2115:29269)
+    at c:\Users\Usuario\.vscode\extensions\eamodio.gitlens-17.6.2\dist\gitlens.js:2394:17196
+    at Array.forEach (<anonymous>)
+    at Object.dispose (c:\Users\Usuario\.vscode\extensions\eamodio.gitlens-17.6.2\dist\gitlens.js:2394:17178)
+    at Hi (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:746)
+    at E2.b (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:15119)
+    at E2.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1227)
+    at SZ.eb (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11992)
+    at file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9947
+    at Array.map (<anonymous>)
+    at SZ.$ (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9935)
+    at SZ.terminate (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10178)
+    at H3.terminate (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+    at Ss (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:10409)
+    at MessagePortMain.<anonymous> (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:6948)
+    at MessagePortMain.emit (node:events:519:28)
+    at MessagePortMain.emit (node:domain:489:12)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-10-17 13:34:31.389 [error] An error occurred when disposing the subscriptions for extension 'fernandoescolar.vscode-solution-explorer':
+2025-10-17 13:34:31.410 [error] RangeError: Maximum call stack size exceeded
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+    at a.<anonymous> (c:\Users\Usuario\.vscode\extensions\fernandoescolar.vscode-solution-explorer-0.9.1\out\extension.js:2:153972)
+    at a.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:24654)
+2025-10-17 13:34:31.431 [error] An error occurred when disposing the subscriptions for extension 'Gruntfuggly.todo-tree':
+2025-10-17 13:34:31.433 [error] AggregateError: Encountered errors while disposing of store
+    at Hi (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:822)
+    at E2.b (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:15119)
+    at E2.dispose (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1227)
+    at SZ.eb (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11992)
+    at file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9947
+    at Array.map (<anonymous>)
+    at SZ.$ (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9935)
+    at SZ.terminate (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10178)
+    at H3.terminate (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+    at Ss (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:10409)
+    at MessagePortMain.<anonymous> (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:6948)
+    at MessagePortMain.emit (node:events:519:28)
+    at MessagePortMain.emit (node:domain:489:12)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-10-17 13:34:31.661 [error] Error: Channel has been closed
+    at n (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:121:2816)
+    at Object.info (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:121:3161)
+    at T.info (c:\Program Files\Microsoft VS Code\resources\app\extensions\json-language-features\client\dist\node\jsonClientMain.js:2:45257)
+    at ChildProcess.<anonymous> (c:\Program Files\Microsoft VS Code\resources\app\extensions\json-language-features\client\dist\node\jsonClientMain.js:2:600486)
+    at ChildProcess.emit (node:events:519:28)
+    at ChildProcess.emit (node:domain:489:12)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-10-17 13:34:32.613 [error] Canceled (FileSystemError): Canceled
+    at ws.e (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:18860)
+    at Object.delete (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:17155)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-17 13:34:33.570 [error] Error: Channel has been closed
+    at s (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:121:2431)
+    at Object.appendLine (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:121:2570)
+    at a.logOutputMessage (c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\dist\extension.js:2:1903364)
+    at a.error (c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\dist\extension.js:2:1903255)
+    at c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\dist\extension.js:2:1911630
+    at async Promise.all (index 50)
+    at SZ.$ (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9961)
+2025-10-17 13:34:33.572 [info] Extension host with pid 22724 exiting with code 0

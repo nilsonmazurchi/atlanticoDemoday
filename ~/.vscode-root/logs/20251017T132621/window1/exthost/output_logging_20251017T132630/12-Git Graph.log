@@ -1,0 +1,7 @@
+[2025-10-17 13:26:48.953] Starting Git Graph ...
+[2025-10-17 13:26:55.184] Using C:\Program Files\Git\cmd\git.exe (version: 2.51.0.windows.2)
+[2025-10-17 13:26:55.192] Started Git Graph - Ready to use!
+[2025-10-17 13:26:55.194] Searching workspace for new repos ...
+[2025-10-17 13:26:55.207] > git rev-parse --show-toplevel
+[2025-10-17 13:26:55.873] Completed searching workspace for new repos
+[2025-10-17 13:26:56.175] Successfully set Visual Studio Code Context "git-graph:codiconsSupported" to "true"

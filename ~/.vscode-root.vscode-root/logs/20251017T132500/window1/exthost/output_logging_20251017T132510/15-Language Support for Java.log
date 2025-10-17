@@ -1,0 +1,2 @@
+out. 17, 2025 1:25:41 PM org.apache.aries.spifly.BaseActivator log
+INFORMA��ES: Registered provider ch.qos.logback.classic.spi.LogbackServiceProvider of service org.slf4j.spi.SLF4JServiceProvider in bundle ch.qos.logback.classic

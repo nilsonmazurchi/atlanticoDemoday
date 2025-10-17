@@ -1,0 +1,35 @@
+(VSCode) 2025-10-17 13:25:32.941 [ERROR]: node-loader:
+Error: c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\5415f7470b2c078d53ddfde78cdc9983.node is not a valid Win32 application.
+c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\5415f7470b2c078d53ddfde78cdc9983.node
+(VSCode) 2025-10-17 13:25:39.461 [ERROR]: Failed to initialize Unleash: undefined
+(VSCode) 2025-10-17 13:25:39.480 [INFO]: Checking network connection...
+(VSCode) 2025-10-17 13:25:44.378 [INFO]: Creating manager directory: C:\Users\Usuario\AppData\Local\Temp\a1da5b4a-c08d-46e7-b556-8d76fc3bd7ff\codeium\manager
+(VSCode) 2025-10-17 13:25:45.016 [INFO]: No Network Issue connecting to https://server.codeium.com/healthz
+(VSCode) 2025-10-17 13:25:52.503 [INFO]: Using cached LS with valid crc32: c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\e03af6ebc40b844314d448f947c80b636d093049\language_server_windows_x64.exe
+(VSCode) 2025-10-17 13:25:52.547 [INFO]: Language server started
+2025/10/17 13:25:52 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I1017 13:25:53.675861 10832 main.go:604] [Language Server Manager] Setting GOMAXPROCS to 4
+I1017 13:25:53.676863 10832 main.go:750] [Language Server Manager] Release 1.48.2 (e03af6ebc40b844314d448f947c80b636d093049)
+I1017 13:25:53.676863 10832 main.go:829] [Language Server Manager] Starting language server manager with pid 10832
+I1017 13:25:53.684802 10832 main.go:138] [Language Server Manager] Manager acquired its lock file C:\Users\Usuario\AppData\Local\Temp\a1da5b4a-c08d-46e7-b556-8d76fc3bd7ff\codeium\manager/locks/manager.lock
+I1017 13:25:53.710667 10832 main.go:283] [Language Server Manager] Waiting for random port file in C:\Users\Usuario\AppData\Local\Temp\a1da5b4a-c08d-46e7-b556-8d76fc3bd7ff\codeium\manager/child_random_port_1760718353686246600_4403955628341844787 to be created
+2025/10/17 13:25:53 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I1017 13:25:54.224205  8952 main.go:604] Setting GOMAXPROCS to 4
+I1017 13:25:54.226086  8952 main.go:823] Starting language server process with pid 8952
+I1017 13:25:54.226086  8952 server.go:296] Language server will attempt to listen on host 127.0.0.1
+I1017 13:25:54.228518  8952 server.go:303] Language server listening on random port at 59324
+2025/10/17 13:25:54 [proxy.Provider.readWinHttpProxy] No proxy discovered via AutoDetect: winapi error #12180
+I1017 13:25:55.339985  8952 web_server.go:256] Chat Web Server listening at ws://127.0.0.1:59329
+I1017 13:25:55.917314  8952 server.go:955] Local search is enabled, will index local files.
+I1017 13:25:55.917314  8952 server.go:959] Using 2 indexer workers
+I1017 13:25:56.165502  8952 server.go:1196] Child process attempting to acquire lock file C:\Users\Usuario\AppData\Local\Temp\a1da5b4a-c08d-46e7-b556-8d76fc3bd7ff\codeium\manager/locks/child_lock_1760718353687368700_5612006731546528519
+I1017 13:25:56.166044  8952 server.go:1204] Child process acquired lock file C:\Users\Usuario\AppData\Local\Temp\a1da5b4a-c08d-46e7-b556-8d76fc3bd7ff\codeium\manager/locks/child_lock_1760718353687368700_5612006731546528519
+59332
+I1017 13:25:56.244006 10832 main.go:319] [Language Server Manager] Found random server port 59324
+I1017 13:25:56.244006 10832 main.go:320] [Language Server Manager] Found random lsp port 59332
+I1017 13:25:56.244006 10832 main.go:327] [Language Server Manager] Attempting to connect to language server at 127.0.0.1:59324
+I1017 13:25:56.265631 10832 main.go:192] [Language Server Manager] Fixing language server port at 59324
+I1017 13:25:56.265631 10832 main.go:381] [Language Server Manager] Successfully connected to new language server at 127.0.0.1:59324
+(VSCode) 2025-10-17 13:25:56.346 [INFO]: Found language server running on port 59324
+(VSCode) 2025-10-17 13:26:09.809 [ERROR]: Canceled
+(VSCode) 2025-10-17 13:26:09.812 [ERROR]: Canceled

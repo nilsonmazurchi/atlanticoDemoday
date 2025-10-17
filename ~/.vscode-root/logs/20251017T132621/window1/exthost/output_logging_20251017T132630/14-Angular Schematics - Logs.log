@@ -1,0 +1,20 @@
+[Info - 13:26:49] Starting workspace configuration loading.
+[Info - 13:26:49] 1 workspace folder(s) detected.
+[Info - 13:26:49] Loading configuration of "cadastroPessoa-Minsait-Backend-JavaSpringBoot" workspace folder.
+[Info - 13:26:49] Loading extension configuration
+[Info - 13:26:49] Loading extension configuration from VS Code settings.
+[Info - 13:26:49] Loading dependencies config from package.json.
+[Info - 13:26:55] Found: /Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot/package.json
+[Info - 13:27:00] Found: /Ubuntu-22.04/root/atlantico/demoday/package.json
+[Info - 13:27:02] Found: /Ubuntu-22.04/root/atlantico/package.json
+[Info - 13:27:04] Found: /Ubuntu-22.04/root/package.json
+[Info - 13:27:09] Loading format configuration
+[Info - 13:27:09] Loading schematics.
+[Info - 13:27:09] 9 schematic(s) loaded.
+[Info - 13:27:10] Loading Angular configuration from: /Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot/Frontend/angular.json
+[Info - 13:27:10] Loading "_0x304fbb" Angular project's lint configuration.
+[Info - 13:27:10] "cadastroPessoas" Angular project is of type "application" and its source path is: Frontend/src.
+[Info - 13:27:10] 1 Angular project(s) detected.
+[Info - 13:27:10] Configuration of all workspace folders is now ready. Duration: 20485ms
+[Info - 13:27:51] Reloading format configuration because VS Code settings changed.
+[Info - 13:27:53] Reloading format configuration because VS Code settings changed.

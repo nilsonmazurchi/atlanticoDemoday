@@ -1,0 +1,88 @@
+[1760718408968] INFO  (ext): SQLTools is starting
+[1760718408972] INFO  (ext): initializing language client...
+[1760718408974] INFO  (ext): Registering client for languages [{"scheme":"sqltools"},{"language":"sql","scheme":"untitled"},{"language":"sql","scheme":"file"},{"language":"sql","scheme":"sqltools"}]
+    ns: "lc"
+[1760718408983] INFO  (ext): loading plugins...
+[1760718408983] INFO  (ext): registering Formatter Plugin.
+    plugin: {
+      "name": "Formatter Plugin"
+    }
+[1760718408984] INFO  (ext): registering Connection Manager Plugin.
+    plugin: {
+      "name": "Connection Manager Plugin"
+    }
+[1760718408985] INFO  (ext): registering CodeLens Plugin.
+    plugin: {
+      "name": "CodeLens Plugin",
+      "registeredLanguages": []
+    }
+[1760718408987] INFO  (ext): registering Dependency Manager Plugin.
+    plugin: {
+      "name": "Dependency Manager Plugin",
+      "installingDrivers": []
+    }
+[1760718408990] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1760718408991] INFO  (ext): registering History Manager Plugin.
+    plugin: {
+      "name": "History Manager Plugin"
+    }
+[1760718408991] INFO  (ext): registering Bookmarks Manager Plugin.
+    plugin: {
+      "name": "Bookmarks Manager Plugin"
+    }
+[1760718408993] INFO  (ext): registering Authentication Provider Plugin.
+    plugin: {
+      "name": "Authentication Provider Plugin",
+      "isRegistered": false
+    }
+[1760718408993] INFO  (ext): registering Object Drop-in Provider (plugin).
+    plugin: {
+      "type": "plugin",
+      "name": "Object Drop-in Provider",
+      "isRegistered": false
+    }
+[1760718408994] INFO  (ext): SQLTools activation completed. 25.7257 ms
+[1760718408994] INFO  (ext): Formatter Plugin registered!
+[1760718408994] INFO  (ext): CodeLens Plugin registered!
+[1760718408995] INFO  (ext): Dependency Manager Plugin registered!
+[1760718408995] INFO  (ext): Connection Manager Plugin registered!
+[1760718408995] INFO  (ext): History Manager Plugin registered!
+[1760718408995] INFO  (ext): Bookmarks Manager Plugin registered!
+[1760718408995] INFO  (ext): Authentication Provider Plugin registered!
+[1760718408995] INFO  (ext): Object Drop-in Provider (plugin) registered!
+[1760718410092] INFO  (ls): SQLTools Server started!
+===============================
+Using node runtime?: no
+ExecPath: C:\Program Files\Microsoft VS Code\Code.exe 
+===============================
+[1760718415179] INFO  (ext): LanguageClient ready
+    ns: "lc"
+[1760718415213] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1760718415214] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1760718415217] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1760718415656] INFO  (ext): registering SQLite Plugin (driver).
+    plugin: {
+      "extensionId": "mtxr.sqltools-driver-sqlite",
+      "name": "SQLite Plugin",
+      "type": "driver"
+    }
+[1760718415183] INFO  (ls): Initialized with node version:v22.19.0
+[1760718416126] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1760718418608] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1760718418608] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1760718418427] INFO  (ls): REQUEST RECEIVED => ls/RegisterPlugin
+[1760718418428] INFO  (ls): request to register plugin: "c:\Users\Usuario\.vscode\extensions\mtxr.sqltools-driver-sqlite-0.5.3\out\ls\plugin.js"
+[1760718418834] INFO  (ls): Driver sqlite registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1760718420435] INFO  (ext): SQLite Plugin (driver) registered!
+[1760718422432] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1760718422432] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1760718430478] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"

@@ -1,0 +1,60 @@
+2025-10-17 13:25:42.689 [info] [GitExtensionServiceImpl] Initializing Git extension service.
+2025-10-17 13:25:42.695 [info] [GitExtensionServiceImpl] Successfully activated the vscode.git extension.
+2025-10-17 13:25:42.700 [info] [GitExtensionServiceImpl] Enablement state of the vscode.git extension: true.
+2025-10-17 13:25:42.702 [info] [GitExtensionServiceImpl] Successfully registered Git commit message provider.
+2025-10-17 13:25:43.406 [warning] GitHub login failed
+2025-10-17 13:25:43.431 [error] Error: GitHubLoginFailed
+    at t9._authShowWarnings (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:18344)
+    at t9.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:16221)
+    at rH.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:25840)
+    at uC.waitForChatEnabled (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:28281)
+    at uC.run (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:28165)
+    at u5.askToUpgradeAuthPermissions (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:27823): Failed to get copilot token
+2025-10-17 13:25:43.447 [error] You are not signed in to GitHub. Please sign in to use Copilot.
+2025-10-17 13:25:43.471 [info] Using the Electron fetcher.
+2025-10-17 13:25:43.474 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-10-17 13:25:43.480 [error] Error: GitHubLoginFailed
+    at t9._authShowWarnings (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:18344)
+    at t9.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:16221)
+    at rH.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:25840)
+    at DU._getToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:5057)
+    at n (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:4521)
+    at DU._registerEmbeddings (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:5018)
+    at async Promise.all (index 1)
+    at async Promise.allSettled (index 1)
+    at yR.waitForActivationBlockers (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:449:1233)
+    at c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:449:1992
+    at Tot (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:449:1860)
+    at Gb.n (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:13382)
+    at Gb.m (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:13345)
+    at Gb.l (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:12801)
+2025-10-17 13:25:43.502 [info] activationBlocker from 'languageModelAccess' took for 1366ms
+2025-10-17 13:25:45.292 [warning] GitHub login failed
+2025-10-17 13:25:45.298 [info] copilot token chat_enabled: undefined, sku: 
+2025-10-17 13:25:45.301 [info] activationBlocker from 'conversationFeature' took for 3193ms
+2025-10-17 13:25:45.391 [warning] GitHub login failed
+2025-10-17 13:25:45.432 [error] You are not signed in to GitHub. Please sign in to use Copilot.
+2025-10-17 13:25:45.482 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-10-17 13:25:45.540 [error] Error: GitHubLoginFailed
+    at t9._authShowWarnings (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:18344)
+    at t9.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:16221)
+    at rH.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:25840)
+    at DU._getToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:5057)
+    at n (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:4521)
+2025-10-17 13:25:45.544 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-10-17 13:25:45.546 [error] Error: GitHubLoginFailed
+    at t9._authShowWarnings (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:18344)
+    at t9.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:16221)
+    at rH.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:25840)
+    at DU._getToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:5057)
+    at DU._provideLanguageModelChatInfo (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:1430)
+    at vy.$provideLanguageModelChatInfo (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:29352)
+2025-10-17 13:25:47.119 [warning] GitHub login failed
+2025-10-17 13:25:47.121 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-10-17 13:25:47.123 [error] Error: GitHubLoginFailed
+    at t9._authShowWarnings (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:18344)
+    at t9.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:935:16221)
+    at rH.getCopilotToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:472:25840)
+    at DU._getToken (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:5057)
+    at DU._provideLanguageModelChatInfo (c:\Users\Usuario\.vscode\extensions\github.copilot-chat-0.32.1\dist\extension.js:614:1430)
+    at vy.$provideLanguageModelChatInfo (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:29352)

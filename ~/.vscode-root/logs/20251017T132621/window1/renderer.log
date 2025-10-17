@@ -1,0 +1,100 @@
+2025-10-17 13:26:27.788 [error] [File Watcher (node.js)] Failed to watch \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User for changes using fs.watch() (Error: EISDIR: illegal operation on a directory, watch '\\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User')
+2025-10-17 13:26:29.154 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-10-17 13:26:29.498 [info] Started local extension host with pid 22724.
+2025-10-17 13:26:30.701 [error] Extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-10-17 13:26:31.645 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: blade
+2025-10-17 13:26:31.646 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: ejs
+2025-10-17 13:26:31.647 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: latte
+2025-10-17 13:26:31.648 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: tpl
+2025-10-17 13:26:31.649 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: twig
+2025-10-17 13:26:31.732 [error] [File Watcher (node.js)] Failed to watch \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User\snippets for changes using fs.watch() (Error: EISDIR: illegal operation on a directory, watch '\\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User\snippets')
+2025-10-17 13:26:32.108 [info] MCP Registry configured: https://api.mcp.github.com/2025-09-15
+2025-10-17 13:26:32.298 [error] [File Watcher ('parcel')] Unexpected error: Failed to read changes (EUNKNOWN) (path: \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot)
+2025-10-17 13:26:32.318 [error] [File Watcher (universal)] Failed to read changes
+2025-10-17 13:26:32.788 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-10-17 13:26:33.981 [info] [perf] Render performance baseline is 114ms
+2025-10-17 13:26:34.604 [error] [File Watcher (node.js)] Failed to watch \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot for changes using fs.watch() (Error: EISDIR: illegal operation on a directory, watch '\\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot')
+2025-10-17 13:26:35.582 [error] An unknown error occurred. Please consult the log for more details.
+2025-10-17 13:26:37.724 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: blade
+2025-10-17 13:26:37.726 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: ejs
+2025-10-17 13:26:37.727 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: latte
+2025-10-17 13:26:37.729 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: tpl
+2025-10-17 13:26:37.731 [error] [1tontech.angular-material]: Unknown language in `contributes.angular-material.language`. Provided value: twig
+2025-10-17 13:26:37.805 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Generates an app shell for running a server-side version of an app.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.807 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Generates a new basic app definition in the "projects" subfolder of the workspace.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.808 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new generic class definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.810 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new generic component definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.811 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new generic directive definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.813 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Generates a new, generic enum definition for the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.814 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Generates a new, generic route guard definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.815 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new, generic interceptor definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.817 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new generic interface definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.818 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new generic library project in the current workspace.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.820 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new generic NgModule definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.821 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new generic pipe definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.823 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new, generic service definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.824 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Pass this schematic to the "run" command to create a service worker` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.826 [warning] [segerdekort.angular-cli]: Menu item references an alt-command `Creates a new generic web worker definition in the given or default project.` which is not defined in the 'commands' section.
+2025-10-17 13:26:37.829 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2025-10-17 13:26:37.854 [error] Ignoring cortex-debug.armToolchainPath.linux as cortex-debug.armToolchainPath is null
+2025-10-17 13:26:37.856 [error] Ignoring cortex-debug.armToolchainPath.osx as cortex-debug.armToolchainPath is null
+2025-10-17 13:26:37.858 [error] Ignoring cortex-debug.armToolchainPath.windows as cortex-debug.armToolchainPath is null
+2025-10-17 13:26:37.860 [error] Ignoring cortex-debug.JLinkGDBServerPath.linux as cortex-debug.JLinkGDBServerPath is null
+2025-10-17 13:26:37.861 [error] Ignoring cortex-debug.JLinkGDBServerPath.osx as cortex-debug.JLinkGDBServerPath is null
+2025-10-17 13:26:37.863 [error] Ignoring cortex-debug.JLinkGDBServerPath.windows as cortex-debug.JLinkGDBServerPath is null
+2025-10-17 13:26:37.864 [error] Ignoring cortex-debug.openocdPath.linux as cortex-debug.openocdPath is null
+2025-10-17 13:26:37.866 [error] Ignoring cortex-debug.openocdPath.osx as cortex-debug.openocdPath is null
+2025-10-17 13:26:37.867 [error] Ignoring cortex-debug.openocdPath.windows as cortex-debug.openocdPath is null
+2025-10-17 13:26:37.869 [error] Ignoring cortex-debug.pyocdPath.linux as cortex-debug.pyocdPath is null
+2025-10-17 13:26:37.870 [error] Ignoring cortex-debug.pyocdPath.osx as cortex-debug.pyocdPath is null
+2025-10-17 13:26:37.872 [error] Ignoring cortex-debug.pyocdPath.windows as cortex-debug.pyocdPath is null
+2025-10-17 13:26:37.873 [error] Ignoring cortex-debug.PEGDBServerPath.linux as cortex-debug.PEGDBServerPath is null
+2025-10-17 13:26:37.875 [error] Ignoring cortex-debug.PEGDBServerPath.osx as cortex-debug.PEGDBServerPath is null
+2025-10-17 13:26:37.876 [error] Ignoring cortex-debug.PEGDBServerPath.windows as cortex-debug.PEGDBServerPath is null
+2025-10-17 13:26:37.878 [error] Ignoring cortex-debug.stutilPath.linux as cortex-debug.stutilPath is null
+2025-10-17 13:26:37.880 [error] Ignoring cortex-debug.stutilPath.osx as cortex-debug.stutilPath is null
+2025-10-17 13:26:37.881 [error] Ignoring cortex-debug.stutilPath.windows as cortex-debug.stutilPath is null
+2025-10-17 13:26:37.883 [error] Ignoring cortex-debug.stlinkPath.linux as cortex-debug.stlinkPath is null
+2025-10-17 13:26:37.884 [error] Ignoring cortex-debug.stlinkPath.osx as cortex-debug.stlinkPath is null
+2025-10-17 13:26:37.886 [error] Ignoring cortex-debug.stlinkPath.windows as cortex-debug.stlinkPath is null
+2025-10-17 13:26:37.887 [error] Ignoring cortex-debug.stm32cubeprogrammer.linux as cortex-debug.stm32cubeprogrammer is null
+2025-10-17 13:26:37.889 [error] Ignoring cortex-debug.stm32cubeprogrammer.osx as cortex-debug.stm32cubeprogrammer is null
+2025-10-17 13:26:37.891 [error] Ignoring cortex-debug.stm32cubeprogrammer.windows as cortex-debug.stm32cubeprogrammer is null
+2025-10-17 13:26:38.773 [error] [Extension Host] (node:22724) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
+2025-10-17 13:26:38.775 [error] [Extension Host] (node:22724) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2025-10-17 13:26:43.640 [info] Extension host (LocalProcess pid: 22724) is unresponsive.
+2025-10-17 13:26:45.232 [info] UNRESPONSIVE extension host: starting to profile NOW
+2025-10-17 13:26:46.073 [info] Not activating extension 'Ionide.Ionide-fsharp': Timed out while searching for 'workspaceContains' pattern **/*.fs,**/*.fsproj,**/*.fsx,**/*.sln
+2025-10-17 13:26:46.075 [info] Not activating extension 'ms-dotnettools.vscode-dotnet-pack': Timed out while searching for 'workspaceContains' pattern *.csproj,*.sln,*.csx,*.cake,**/*.csproj,**/*.sln,**/*.csx,**/*.cake
+2025-10-17 13:26:46.076 [info] Not activating extension 'ms-python.black-formatter': Timed out while searching for 'workspaceContains' pattern *.py
+2025-10-17 13:26:46.077 [info] Not activating extension 'ms-python.python': Timed out while searching for 'workspaceContains' pattern **/pylock.*.toml
+2025-10-17 13:26:46.079 [info] Not activating extension 'ms-vscode.cmake-tools': Timed out while searching for 'workspaceContains' pattern */CMakeLists.txt,*/*/CMakeLists.txt,*/*/*/CMakeLists.txt
+2025-10-17 13:26:46.080 [info] Not activating extension 'vscjava.vscode-gradle': Timed out while searching for 'workspaceContains' pattern **/gradlew,**/gradlew.bat,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts
+2025-10-17 13:26:46.081 [info] Not activating extension 'vscjava.vscode-java-dependency': Timed out while searching for 'workspaceContains' pattern */pom.xml,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts,*/.classpath
+2025-10-17 13:26:46.082 [info] Not activating extension 'vscjava.vscode-java-pack': Timed out while searching for 'workspaceContains' pattern */pom.xml,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts,*/.classpath
+2025-10-17 13:26:46.083 [info] Not activating extension 'vscjava.vscode-java-test': Timed out while searching for 'workspaceContains' pattern */pom.xml,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts,*/.classpath
+2025-10-17 13:26:47.292 [error] [Extension Host] (node:22724) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2025-10-17 13:26:48.576 [error] An unknown error occurred. Please consult the log for more details.
+2025-10-17 13:26:48.599 [info] Extension host (LocalProcess pid: 22724) is responsive.
+2025-10-17 13:26:48.600 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2025-10-17 13:26:49.048 [warning] UNRESPONSIVE extension host: 'github.copilot' took 27.56937530694577% of 929.059ms, saved PROFILE here: 'file:///c%3A/Users/Usuario/AppData/Local/Temp/exthost-f479f5.cpuprofile'
+2025-10-17 13:26:53.556 [info] Extension host (LocalProcess pid: 22724) is unresponsive.
+2025-10-17 13:26:54.835 [info] UNRESPONSIVE extension host: starting to profile NOW
+2025-10-17 13:26:55.264 [warning] Authentication provider codeium_auth was not declared in the Extension Manifest.
+2025-10-17 13:26:55.272 [info] Extension host (LocalProcess pid: 22724) is responsive.
+2025-10-17 13:26:55.274 [info] UNRESPONSIVE extension host: received responsive event and cancelling profiling session
+2025-10-17 13:26:55.532 [warning] UNRESPONSIVE extension host: 'zignd.html-css-class-completion' took 71.16214476848559% of 315.138ms, saved PROFILE here: 'file:///c%3A/Users/Usuario/AppData/Local/Temp/exthost-a34bf9.cpuprofile'
+2025-10-17 13:27:03.085 [error] chatParticipant must be declared in package.json: claude-code
+2025-10-17 13:27:08.486 [error] An unknown error occurred. Please consult the log for more details.
+2025-10-17 13:27:09.296 [warning] [LM] No provider registered for vendor azure
+2025-10-17 13:27:09.298 [warning] [LM] No provider registered for vendor anthropic
+2025-10-17 13:27:09.299 [warning] [LM] No provider registered for vendor xai
+2025-10-17 13:27:09.300 [warning] [LM] No provider registered for vendor ollama
+2025-10-17 13:27:09.302 [warning] [LM] No provider registered for vendor openai
+2025-10-17 13:27:09.305 [warning] [LM] No provider registered for vendor gemini
+2025-10-17 13:27:09.307 [warning] [LM] No provider registered for vendor groq
+2025-10-17 13:27:09.308 [warning] [LM] No provider registered for vendor openrouter
+2025-10-17 13:30:39.034 [warning] Settings pattern "mcp" doesn't match any settings
+2025-10-17 13:30:39.058 [warning] SettingsEditor2: Settings not included in settingsLayout.ts: github.copilot.chat.agent.terminal.allowList, github.copilot.chat.agent.terminal.denyList
+2025-10-17 13:30:40.016 [warning] Settings pattern "GitHub.copilot.manageExtension" doesn't match any settings

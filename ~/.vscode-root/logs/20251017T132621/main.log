@@ -1,0 +1,23 @@
+2025-10-17 13:26:21.389 [info] update#setState idle
+2025-10-17 13:26:21.459 [error] [File Watcher (node.js)] Failed to watch \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User for changes using fs.watch() (Error: EISDIR: illegal operation on a directory, watch '\\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User')
+2025-10-17 13:26:23.140 [error] [storage state.vscdb] exec(): Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:23.143 [error] [storage state.vscdb] open(): Unable to open DB due to Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:23.189 [error] [storage state.vscdb] exec(): Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:23.192 [error] [storage state.vscdb] open(): Unable to open DB due to Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:25.849 [error] [File Watcher (node.js)] Failed to watch \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User for changes using fs.watch() (Error: EISDIR: illegal operation on a directory, watch '\\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot\~\.vscode-root\User')
+2025-10-17 13:26:26.752 [error] [storage state.vscdb] exec(): Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:26.757 [error] [storage state.vscdb] open(): Unable to open DB due to Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:26.800 [error] [storage state.vscdb] exec(): Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:26.804 [error] [storage state.vscdb] open(): Unable to open DB due to Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:28.477 [error] [storage state.vscdb] exec(): Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:28.480 [error] [storage state.vscdb] open(): Unable to use backup due to Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:28.550 [error] [storage state.vscdb] exec(): Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:28.558 [error] [storage state.vscdb] open(): Unable to use backup due to Error: SQLITE_BUSY: database is locked
+2025-10-17 13:26:51.377 [info] update#setState checking for updates
+2025-10-17 13:26:51.611 [info] update#setState downloading
+2025-10-17 13:26:51.617 [info] update#setState downloaded
+2025-10-17 13:34:33.425 [error] [storage state.vscdb] exec(): Error: SQLITE_BUSY: database is locked
+2025-10-17 13:34:48.304 [error] [storage state.vscdb] exec(): Error: SQLITE_BUSY: database is locked
+2025-10-17 13:34:48.308 [warning] No ptyHost heartbeat after 6 seconds
+2025-10-17 13:34:52.815 [info] Extension host with pid 22724 exited with code: 0, signal: unknown.
+2025-10-17 13:34:52.820 [error] Error: SQLITE_BUSY: database is locked

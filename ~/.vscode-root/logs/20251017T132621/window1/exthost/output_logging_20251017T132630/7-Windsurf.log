@@ -1,0 +1,44 @@
+(VSCode) 2025-10-17 13:26:48.738 [ERROR]: node-loader:
+Error: c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\5415f7470b2c078d53ddfde78cdc9983.node is not a valid Win32 application.
+c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\5415f7470b2c078d53ddfde78cdc9983.node
+(VSCode) 2025-10-17 13:26:55.236 [ERROR]: Failed to initialize Unleash: undefined
+(VSCode) 2025-10-17 13:26:55.238 [INFO]: Checking network connection...
+(VSCode) 2025-10-17 13:27:06.514 [INFO]: No Network Issue connecting to https://server.codeium.com/healthz
+(VSCode) 2025-10-17 13:27:07.012 [INFO]: Creating manager directory: C:\Users\Usuario\AppData\Local\Temp\eb45036f-3ed2-4cff-8b1a-d7d1fad4ef33\codeium\manager
+(VSCode) 2025-10-17 13:27:11.877 [INFO]: Using cached LS with valid crc32: c:\Users\Usuario\.vscode\extensions\codeium.codeium-1.48.2\dist\e03af6ebc40b844314d448f947c80b636d093049\language_server_windows_x64.exe
+(VSCode) 2025-10-17 13:27:11.897 [INFO]: Language server started
+2025/10/17 13:27:12 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I1017 13:27:12.463879 16612 main.go:604] [Language Server Manager] Setting GOMAXPROCS to 4
+I1017 13:27:12.463879 16612 main.go:750] [Language Server Manager] Release 1.48.2 (e03af6ebc40b844314d448f947c80b636d093049)
+I1017 13:27:12.463879 16612 main.go:829] [Language Server Manager] Starting language server manager with pid 16612
+I1017 13:27:12.466879 16612 main.go:138] [Language Server Manager] Manager acquired its lock file C:\Users\Usuario\AppData\Local\Temp\eb45036f-3ed2-4cff-8b1a-d7d1fad4ef33\codeium\manager/locks/manager.lock
+I1017 13:27:12.494929 16612 main.go:283] [Language Server Manager] Waiting for random port file in C:\Users\Usuario\AppData\Local\Temp\eb45036f-3ed2-4cff-8b1a-d7d1fad4ef33\codeium\manager/child_random_port_1760718432466879600_4039878418223005573 to be created
+2025/10/17 13:27:12 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I1017 13:27:12.934188  3284 main.go:604] Setting GOMAXPROCS to 4
+I1017 13:27:12.935576  3284 main.go:823] Starting language server process with pid 3284
+I1017 13:27:12.935576  3284 server.go:296] Language server will attempt to listen on host 127.0.0.1
+I1017 13:27:12.936639  3284 server.go:303] Language server listening on random port at 59556
+2025/10/17 13:27:12 [proxy.Provider.readWinHttpProxy] No proxy discovered via AutoDetect: winapi error #12180
+I1017 13:27:13.950899  3284 web_server.go:256] Chat Web Server listening at ws://127.0.0.1:59560
+I1017 13:27:14.361638  3284 server.go:955] Local search is enabled, will index local files.
+I1017 13:27:14.361638  3284 server.go:959] Using 2 indexer workers
+I1017 13:27:14.691076  3284 server.go:1196] Child process attempting to acquire lock file C:\Users\Usuario\AppData\Local\Temp\eb45036f-3ed2-4cff-8b1a-d7d1fad4ef33\codeium\manager/locks/child_lock_1760718432467881400_2663062713324401779
+I1017 13:27:14.692147  3284 server.go:1204] Child process acquired lock file C:\Users\Usuario\AppData\Local\Temp\eb45036f-3ed2-4cff-8b1a-d7d1fad4ef33\codeium\manager/locks/child_lock_1760718432467881400_2663062713324401779
+I1017 13:27:14.809437 16612 main.go:319] [Language Server Manager] Found random server port 59556
+59563
+I1017 13:27:14.809970 16612 main.go:320] [Language Server Manager] Found random lsp port 59563
+I1017 13:27:14.809970 16612 main.go:327] [Language Server Manager] Attempting to connect to language server at 127.0.0.1:59556
+I1017 13:27:14.828147 16612 main.go:192] [Language Server Manager] Fixing language server port at 59556
+I1017 13:27:14.828147 16612 main.go:381] [Language Server Manager] Successfully connected to new language server at 127.0.0.1:59556
+(VSCode) 2025-10-17 13:27:14.838 [INFO]: Found language server running on port 59556
+(VSCode) 2025-10-17 13:27:15.091 [INFO]: openAllTextDocuments took 25.098100000002887ms
+(VSCode) 2025-10-17 13:27:15.105 [ERROR]: Extension 'vscode.git' is not known or not activated
+(VSCode) 2025-10-17 13:27:18.074 [ERROR]: User did not consent to login.
+(VSCode) 2025-10-17 13:34:31.354 [INFO]: Disposing language server process
+(VSCode) 2025-10-17 13:34:31.355 [INFO]: Deleting manager directory: C:\Users\Usuario\AppData\Local\Temp\eb45036f-3ed2-4cff-8b1a-d7d1fad4ef33\codeium\manager
+(VSCode) 2025-10-17 13:34:31.621 [INFO]: Language server killed with signal SIGTERM
+(VSCode) 2025-10-17 13:34:32.139 [ERROR]: [unavailable] connect ECONNREFUSED 127.0.0.1:59556
+(VSCode) 2025-10-17 13:34:32.645 [ERROR]: [unavailable] connect ECONNREFUSED 127.0.0.1:59556
+(VSCode) 2025-10-17 13:34:32.715 [ERROR]: connect ECONNREFUSED 127.0.0.1:59560
+(VSCode) 2025-10-17 13:34:32.717 [ERROR]: connect ECONNREFUSED 127.0.0.1:59560
+(VSCode) 2025-10-17 13:34:33.148 [ERROR]: [unavailable] connect ECONNREFUSED 127.0.0.1:59556

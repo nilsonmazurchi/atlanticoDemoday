@@ -1,0 +1,32 @@
+2025-10-17 13:25:42.657 [info] Executing c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\jre\21.0.8-win32-x86_64.tar\bin\java -jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\server\sonarlint-ls.jar -stdio -analyzers c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonargo.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonarjava.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonarjavasymbolicexecution.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonarjs.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonarphp.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonarpython.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonarhtml.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonarxml.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonartext.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonariac.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\analyzers\sonarlintomnisharp.jar c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint_ondemand-analyzers\sonar-cfamily-plugin\6.73.0.90893\sonarcfamily.jar
+2025-10-17 13:25:45.024 [info] [Info - 13:25:44.510] [sonarlint : SonarLint Server RPC sequential executor] Started embedded server on port 64120
+2025-10-17 13:25:45.120 [info] [Warn - 13:25:45.067] [jetbrains.exodus.io.FileDataWriter : SonarLint Server RPC sequential executor] Can't open directory channel. Log directory fsync won't be performed.
+2025-10-17 13:25:47.294 [info] Error reading MCP config: Unexpected end of JSON input
+2025-10-17 13:25:54.105 [info] [Info - 13:25:54.104] [sonarlint : sonarlint-analysis-scheduler] .gitignore file was not found for \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot
+2025-10-17 13:25:58.382 [info] [Info - 13:25:58.377] [sonarlint : sonarlint-analysis-scheduler] .gitignore file was not found for \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot
+2025-10-17 13:25:58.447 [info] [Info - 13:25:58.445] [sonarlint : sonarlint-analysis-scheduler] .gitignore file was not found for \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot
+2025-10-17 13:25:58.482 [info] [Info - 13:25:58.471] [sonarlint : sonarlint-analysis-scheduler] Starting analysis with configuration: [
+  baseDir: \\wsl.localhost\Ubuntu-22.04\root\atlantico\demoday\cadastroPessoa-Minsait-Backend-JavaSpringBoot
+  extraProperties: {sonar.cfamily.compile-commands=, sonar.js.internal.bundlePath=c:\Users\Usuario\.vscode\extensions\sonarsource.sonarlint-vscode-4.33.0-win32-x64\eslint-bridge}
+  activeRules: [13 kubernetes, 264 python, 430 cpp, 189 c, 22 go, 260 ipython, 30 secrets, 26 docker, 501 java, 46 Web, 14 xml, 299 csharpsquid, 155 php, 7 terraform, 18 azureresourcemanager, 7 cloudformation]
+  inputFiles: [
+    file://wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot/package.json (UTF-8) [json]
+    file://wsl.localhost/Ubuntu-22.04/root/atlantico/demoday/cadastroPessoa-Minsait-Backend-JavaSpringBoot/Frontend/package.json (UTF-8) [json]
+  ]
+]
+
+2025-10-17 13:25:59.780 [info] [Info - 13:25:59.778] [sonarlint : sonarlint-analysis-scheduler] Index files
+2025-10-17 13:25:59.791 [info] [Info - 13:25:59.779] [sonarlint : Report about progress of file indexation] 2 files indexed
+2025-10-17 13:26:01.854 [info] [Info - 13:26:01.843] [org.sonar.iac.common.extension.IacSensor : sonarlint-analysis-scheduler] There are no files to be analyzed for the CloudFormation language
+2025-10-17 13:26:01.856 [info] [Info - 13:26:01.843] [org.sonar.iac.common.extension.IacSensor : sonarlint-analysis-scheduler] There are no files to be analyzed for the Docker language
+2025-10-17 13:26:01.857 [info] [Info - 13:26:01.843] [org.sonar.iac.common.extension.IacSensor : sonarlint-analysis-scheduler] There are no files to be analyzed for the Azure Resource Manager language
+2025-10-17 13:26:01.863 [info] [Info - 13:26:01.859] [org.sonar.iac.common.extension.IacSensor : sonarlint-analysis-scheduler] There are no files to be analyzed for the Java language
+2025-10-17 13:26:01.869 [info] [Info - 13:26:01.859] [org.sonar.plugins.common.TextAndSecretsSensor : sonarlint-analysis-scheduler] Available processors: 8
+2025-10-17 13:26:01.870 [info] [Info - 13:26:01.859] [org.sonar.plugins.common.TextAndSecretsSensor : sonarlint-analysis-scheduler] Using 8 threads for analysis.
+2025-10-17 13:26:02.549 [info] [Info - 13:26:02.544] [org.sonar.plugins.common.TextAndSecretsSensor : sonarlint-analysis-scheduler] Start fetching files for the text and secrets analysis
+2025-10-17 13:26:02.552 [info] [Info - 13:26:02.545] [org.sonar.plugins.common.TextAndSecretsSensor : sonarlint-analysis-scheduler] Retrieving all except binary files
+2025-10-17 13:26:02.554 [info] [Info - 13:26:02.546] [org.sonar.plugins.common.analyzer.Analyzer : sonarlint-analysis-scheduler] Starting the text and secrets analysis
+2025-10-17 13:26:02.556 [info] [Info - 13:26:02.554] [org.sonar.plugins.common.MultiFileProgressReport : Progress of the text and secrets analysis] 2 source files to be analyzed for the text and secrets analysis
+2025-10-17 13:26:02.574 [info] [Info - 13:26:02.573] [org.sonar.plugins.common.MultiFileProgressReport : Progress of the text and secrets analysis] 2/2 source files have been analyzed for the text and secrets analysis
+2025-10-17 13:26:02.584 [info] [Info - 13:26:02.583] [sonarlint : sonarlint-analysis-scheduler] Analysis detected 0 issues and 0 Security Hotspots in 4107ms
+2025-10-17 13:26:02.596 [info] [Warn - 13:26:02.594] Node.js runtime version 20.12.0 or later is required. Current version is 18.20.6.
