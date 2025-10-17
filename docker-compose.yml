@@ -1,0 +1,20 @@
+﻿version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080"
+    # Variáveis de ambiente para o H2 embutido geralmente não são necessárias aqui,
+    # pois ele é configurado via application.properties ou em memória.
+
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: docker/Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
