@@ -199,24 +199,24 @@ jobs:
           TF_VAR_docker_image_name: ${{ needs.build-and-push.outputs.docker_image_name }}
           TF_VAR_docker_image_tag: ${{ needs.build-and-push.outputs.docker_image_tag }}
 
-  destroy:
-    name: Destroy Koyeb staging
-    runs-on: ubuntu-latest
-    needs: deploy
-    environment: staging
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # destroy:
+  #   name: Destroy Koyeb staging
+  #   runs-on: ubuntu-latest
+  #   needs: deploy
+  #   environment: staging
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
+  #     - name: Setup Terraform
+  #       uses: hashicorp/setup-terraform@v3
 
-      - name: Terraform init
-        run: terraform -chdir=infra init
-        env:
-          KOYEB_TOKEN: ${{ secrets.KOYEB_TOKEN }}
+  #     - name: Terraform init
+  #       run: terraform -chdir=infra init
+  #       env:
+  #         KOYEB_TOKEN: ${{ secrets.KOYEB_TOKEN }}
 
-      - name: Terraform destroy
-        run: terraform -chdir=infra destroy -auto-approve
-        env:
-          KOYEB_TOKEN: ${{ secrets.KOYEB_TOKEN }}
+  #     - name: Terraform destroy
+  #       run: terraform -chdir=infra destroy -auto-approve
+  #       env:
+  #         KOYEB_TOKEN: ${{ secrets.KOYEB_TOKEN }}
