@@ -40,7 +40,7 @@ resource "koyeb_service" "service" {
         type = "free"
         }
     ports {
-      protocol = "HTTP"
+      protocol = "http"
       port = 8080
       }
     scalings {
