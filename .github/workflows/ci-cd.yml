@@ -115,14 +115,11 @@ jobs:
           npm ci
           npm run build -- --output-path=dist --configuration=production
 
-      - name: Copy built frontend to backend resources (optional)
-        if: always()
+      - name: Copy built frontend to backend resources
         run: |
-          # Se desejar empacotar frontend no JAR backend (opcional), copie para Backend/src/main/resources/static
           mkdir -p Backend/src/main/resources/static
-          rm -rf Backend/src/main/resources/static/*
-          cp -r Frontend/dist/* Backend/src/main/resources/static/ || echo "Nenhum build frontend encontrado"
-
+          cp -r Frontend/dist/frontend/browser/* Backend/src/main/resources/static/
+  
   build-and-push:
     name: Build and Push Docker Image
     needs:
