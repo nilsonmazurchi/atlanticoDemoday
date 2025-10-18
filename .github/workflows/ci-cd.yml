@@ -1,4 +1,4 @@
-﻿name: CI/CD - Atlantico DemoDay (Backend + Frontend)
+﻿name: CI/CD - Atlantico DemoDay (Backend + Frontend Integrado)
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 env:
   DOCKER_USER: nilsonmazurchi
-  SERVICE_NAME: atlantico-demoday  
+  SERVICE_NAME: atlantico-demoday
 
 jobs:
 
@@ -26,7 +26,6 @@ jobs:
         working-directory: Backend
         run: |
           echo "Lint backend (skipping if not configured)"
-          # Se houver plugin maven-checkstyle-plugin configurado, descomente:
           # mvn -B -q -e checkstyle:check
 
       - name: Setup Node (for frontend linters)
@@ -57,8 +56,7 @@ jobs:
 
       - name: Run backend tests (Maven)
         working-directory: Backend
-        run: |
-          mvn -B -DskipTests=false test
+        run: mvn -B -DskipTests=false test
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -71,100 +69,9 @@ jobs:
           npm ci
           npm test -- --watch=false || true
 
-  build-backend:
-    name: Build Backend (Jar)
-    runs-on: ubuntu-latest
-    needs: test
-    outputs:
-      backend_jar_path: ${{ steps.set-output.outputs.backend_jar }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 21
-
-      - name: Build with Maven
-        working-directory: Backend
-        run: |
-          mvn -B -DskipTests package
-          echo "backend-jar=$(ls Backend/target/*.jar | head -n1)" >> $GITHUB_OUTPUT
-      - name: set-output
-        id: set-output
-        run: echo "backend_jar=$(ls Backend/target/*.jar | head -n1)" >> $GITHUB_OUTPUT
-
-  build-frontend:
-    name: Build Frontend (Angular)
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install & Build Angular
-        working-directory: Frontend
-        run: |
-          npm ci
-          npm run build -- --output-path=dist --configuration=production
-
-      - name: Debug - Full structure analysis
-        working-directory: Frontend
-        run: |
-          echo "=== Estrutura completa do projeto Frontend ==="
-          find . -name "angular.json" -o -name "*.json" | grep -E "(angular|package)" | head -5
-          
-          echo "=== Conteúdo do dist APÓS build ==="
-          ls -la dist/ || echo "Dist não existe"
-          
-          echo "=== Buscando por index.html em todo o dist ==="
-          find dist -name "index.html" 2>/dev/null || echo "index.html não encontrado"
-          
-          echo "=== Estrutura recursiva do dist ==="
-          find dist -type f -name "*.html" -o -name "main.*.js" | head -10
-
-      - name: Copy based on actual structure
-        run: |
-          mkdir -p Backend/src/main/resources/static
-          rm -rf Backend/src/main/resources/static/*
-          
-          # Procura por index.html para determinar a estrutura correta
-          if find Frontend/dist -name "index.html" | head -1; then
-            INDEX_PATH=$(find Frontend/dist -name "index.html" | head -1)
-            DIST_DIR=$(dirname "$INDEX_PATH")
-            echo "Encontrado index.html em: $INDEX_PATH"
-            echo "Copiando de: $DIST_DIR"
-            cp -r "$DIST_DIR"/* Backend/src/main/resources/static/
-          else
-            echo "Tentando copiar estrutura alternativa..."
-            # Tenta diferentes estruturas comuns
-            if [ -d "Frontend/dist/cadastro-pessoas" ]; then
-              cp -r Frontend/dist/cadastro-pessoas/* Backend/src/main/resources/static/
-            elif [ -d "Frontend/dist/frontend" ]; then
-              cp -r Frontend/dist/frontend/* Backend/src/main/resources/static/
-            elif [ -d "Frontend/dist/browser" ]; then
-              cp -r Frontend/dist/browser/* Backend/src/main/resources/static/
-            else
-              # Última tentativa: copia tudo do dist
-              cp -r Frontend/dist/* Backend/src/main/resources/static/
-            fi
-          fi
-          
-          echo "Conteúdo copiado:"
-          ls -la Backend/src/main/resources/static/
-
   build-and-push:
-    name: Build and Push Docker Image
-    needs:
-      - build-backend
-      - build-frontend
+    name: Build and Push Full Stack Docker Image
+    needs: test
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: nilsonmazurchi/atlantico-demoday
@@ -187,11 +94,11 @@ jobs:
           username: ${{ env.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
 
-      - name: Build and push Docker image
+      - name: Build and push unified Backend + Frontend image
         uses: docker/build-push-action@v5
         id: build
         with:
-          context: ./Backend
+          context: .
           file: ./Backend/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
@@ -207,7 +114,6 @@ jobs:
         run: |
           echo "docker_image_name=${{ env.IMAGE_NAME }}" >> $GITHUB_OUTPUT
           echo "docker_image_tag=1.0.${{ github.run_id }}" >> $GITHUB_OUTPUT
-
 
   deploy:
     name: Deploy to Koyeb
