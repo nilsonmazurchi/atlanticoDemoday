@@ -12,7 +12,6 @@ on:
 env:
   DOCKER_USER: nilsonmazurchi
   SERVICE_NAME: atlantico-demoday  
-  IMAGE_NAME: ${{ env.DOCKER_USER }}/${{ env.SERVICE_NAME }}
 
 jobs:
 
