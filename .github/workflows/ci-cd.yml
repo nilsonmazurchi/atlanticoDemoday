@@ -115,11 +115,31 @@ jobs:
           npm ci
           npm run build -- --output-path=dist --configuration=production
 
+      - name: Debug - List dist contents
+        working-directory: Frontend
+        run: |
+          echo "=== Estrutura do diretório dist ==="
+          find dist -type f -name "*.html" | head -10
+          echo "=== Conteúdo completo ==="
+          ls -la dist/
+          ls -la dist/frontend/ || echo "Não existe frontend/"
+          ls -la dist/frontend/browser/ || echo "Não existe browser/"
+
       - name: Copy built frontend to backend resources
         run: |
           mkdir -p Backend/src/main/resources/static
-          cp -r Frontend/dist/frontend/browser/* Backend/src/main/resources/static/
-  
+          # Tente diferentes caminhos possíveis:
+          if [ -d "Frontend/dist/frontend" ]; then
+            cp -r Frontend/dist/frontend/* Backend/src/main/resources/static/
+          elif [ -d "Frontend/dist/browser" ]; then
+            cp -r Frontend/dist/browser/* Backend/src/main/resources/static/
+          else
+            # Copia todo o conteúdo do dist
+            cp -r Frontend/dist/* Backend/src/main/resources/static/
+          fi
+          echo "Conteúdo copiado para Backend/src/main/resources/static/:"
+          ls -la Backend/src/main/resources/static/
+
   build-and-push:
     name: Build and Push Docker Image
     needs:
