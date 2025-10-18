@@ -129,6 +129,8 @@ jobs:
       - build-backend
       - build-frontend
     runs-on: ubuntu-latest
+    env:
+    IMAGE_NAME: nilsonmazurchi/atlantico-demoday
     outputs:
       docker_image_name: ${{ steps.set-outputs.outputs.docker_image_name }}
       docker_image_tag: ${{ steps.set-outputs.outputs.docker_image_tag }}
