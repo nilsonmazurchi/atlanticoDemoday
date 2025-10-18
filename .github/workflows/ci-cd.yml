@@ -119,26 +119,23 @@ jobs:
         working-directory: Frontend
         run: |
           echo "=== Estrutura do diretório dist ==="
-          find dist -type f -name "*.html" | head -10
-          echo "=== Conteúdo completo ==="
           ls -la dist/
-          ls -la dist/frontend/ || echo "Não existe frontend/"
-          ls -la dist/frontend/browser/ || echo "Não existe browser/"
+          echo "=== Conteúdo de cadastro-pessoas ==="
+          ls -la dist/cadastro-pessoas/
 
       - name: Copy built frontend to backend resources
         run: |
           mkdir -p Backend/src/main/resources/static
-          # Tente diferentes caminhos possíveis:
-          if [ -d "Frontend/dist/frontend" ]; then
-            cp -r Frontend/dist/frontend/* Backend/src/main/resources/static/
-          elif [ -d "Frontend/dist/browser" ]; then
-            cp -r Frontend/dist/browser/* Backend/src/main/resources/static/
-          else
-            # Copia todo o conteúdo do dist
-            cp -r Frontend/dist/* Backend/src/main/resources/static/
-          fi
-          echo "Conteúdo copiado para Backend/src/main/resources/static/:"
+          # Remove conteúdo anterior se existir
+          rm -rf Backend/src/main/resources/static/*
+          
+          # Copia do caminho correto
+          cp -r Frontend/dist/cadastro-pessoas/* Backend/src/main/resources/static/
+          
+          echo "Arquivos copiados para Backend/src/main/resources/static/:"
           ls -la Backend/src/main/resources/static/
+          echo "Arquivo index.html existe?"
+          test -f Backend/src/main/resources/static/index.html && echo "SIM" || echo "NÃO"
 
   build-and-push:
     name: Build and Push Docker Image
