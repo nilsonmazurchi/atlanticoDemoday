@@ -115,27 +115,50 @@ jobs:
           npm ci
           npm run build -- --output-path=dist --configuration=production
 
-      - name: Debug - List dist contents
+      - name: Debug - Full structure analysis
         working-directory: Frontend
         run: |
-          echo "=== Estrutura do diretório dist ==="
-          ls -la dist/
-          echo "=== Conteúdo de cadastro-pessoas ==="
-          ls -la dist/cadastro-pessoas/
+          echo "=== Estrutura completa do projeto Frontend ==="
+          find . -name "angular.json" -o -name "*.json" | grep -E "(angular|package)" | head -5
+          
+          echo "=== Conteúdo do dist APÓS build ==="
+          ls -la dist/ || echo "Dist não existe"
+          
+          echo "=== Buscando por index.html em todo o dist ==="
+          find dist -name "index.html" 2>/dev/null || echo "index.html não encontrado"
+          
+          echo "=== Estrutura recursiva do dist ==="
+          find dist -type f -name "*.html" -o -name "main.*.js" | head -10
 
-      - name: Copy built frontend to backend resources
+      - name: Copy based on actual structure
         run: |
           mkdir -p Backend/src/main/resources/static
-          # Remove conteúdo anterior se existir
           rm -rf Backend/src/main/resources/static/*
           
-          # Copia do caminho correto
-          cp -r Frontend/dist/cadastro-pessoas/* Backend/src/main/resources/static/
+          # Procura por index.html para determinar a estrutura correta
+          if find Frontend/dist -name "index.html" | head -1; then
+            INDEX_PATH=$(find Frontend/dist -name "index.html" | head -1)
+            DIST_DIR=$(dirname "$INDEX_PATH")
+            echo "Encontrado index.html em: $INDEX_PATH"
+            echo "Copiando de: $DIST_DIR"
+            cp -r "$DIST_DIR"/* Backend/src/main/resources/static/
+          else
+            echo "Tentando copiar estrutura alternativa..."
+            # Tenta diferentes estruturas comuns
+            if [ -d "Frontend/dist/cadastro-pessoas" ]; then
+              cp -r Frontend/dist/cadastro-pessoas/* Backend/src/main/resources/static/
+            elif [ -d "Frontend/dist/frontend" ]; then
+              cp -r Frontend/dist/frontend/* Backend/src/main/resources/static/
+            elif [ -d "Frontend/dist/browser" ]; then
+              cp -r Frontend/dist/browser/* Backend/src/main/resources/static/
+            else
+              # Última tentativa: copia tudo do dist
+              cp -r Frontend/dist/* Backend/src/main/resources/static/
+            fi
+          fi
           
-          echo "Arquivos copiados para Backend/src/main/resources/static/:"
+          echo "Conteúdo copiado:"
           ls -la Backend/src/main/resources/static/
-          echo "Arquivo index.html existe?"
-          test -f Backend/src/main/resources/static/index.html && echo "SIM" || echo "NÃO"
 
   build-and-push:
     name: Build and Push Docker Image
