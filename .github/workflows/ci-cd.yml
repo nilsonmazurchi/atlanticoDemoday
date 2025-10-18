@@ -12,6 +12,7 @@ on:
 env:
   DOCKER_USER: nilsonmazurchi
   SERVICE_NAME: atlantico-demoday  
+  IMAGE_NAME: ${{ env.DOCKER_USER }}/${{ env.SERVICE_NAME }}
 
 jobs:
 
@@ -129,6 +130,8 @@ jobs:
       - build-backend
       - build-frontend
     runs-on: ubuntu-latest
+    env:
+    IMAGE_NAME: nilsonmazurchi/atlantico-demoday
     outputs:
       docker_image_name: ${{ steps.set-outputs.outputs.docker_image_name }}
       docker_image_tag: ${{ steps.set-outputs.outputs.docker_image_tag }}
