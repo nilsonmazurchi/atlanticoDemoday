@@ -1,15 +1,27 @@
-# terraform {
-#   required_providers {
-#     koyeb = {
-#       source = "koyeb/koyeb"
-#       version = "~> 1.0"
-#     }
-#   }
-# }
+terraform {
+  required_providers {
+    koyeb = {
+      source = "koyeb/koyeb"      
+    }
+    random = {
+      source = "hashicorp/random"      
+    }
+  }
+}
 
-# provider "koyeb" {
-  
-# }
+provider "koyeb" {
+  #
+  # Use the KOYEB_TOKEN env variable to set your Koyeb API token.
+  #
+}
+
+resource "random_id" "suffix" {
+  byte_length = 4
+}
+
+resource "koyeb_app" "app" {
+  name = "atl-demoday-${random_id.suffix.hex}"
+}
 
 # variable "koyeb_token" {}
 # variable "docker_image_name" {
@@ -19,20 +31,37 @@
 #   default = "latest"
 # }
 
-# resource "koyeb_app" "demoday" {
-#   name = "atlantico-demoday"
+resource "koyeb_service" "service" {
+  app_name = koyeb_app.app.name
 
-#   service {
-#     name = "web"
-#     type = "web"
-#     image {
-#       registry = "docker.io"
-#       name     = var.docker_image_name
-#       tag      = var.docker_image_tag
-#     }
-#     ports {
-#       protocol = "HTTP"
-#       internal_port = 8080
-#     }
-#   }
-# }
+  definition {
+    name = "atlantico-demoday"
+    instance_types{
+        type = "free"
+        }
+    ports {
+      protocol = "HTTP"
+      port = 8080
+      }
+    scalings {
+      min = 0
+      max = 1
+      }
+    env {
+        key = "PORT"
+        value = "8080"
+        }
+    routes {
+      path = "/"
+      port = 8080
+      }
+    regions = ["was"]
+    docker {
+      image = "${var.docker_image_name}:${var.docker_image_tag}"
+      } 
+    }
+
+    depends_on = [
+    koyeb_app.app
+    ]
+}
