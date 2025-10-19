@@ -2,10 +2,15 @@
 
 WORKDIR /app
 
+# Instalar Maven
+RUN apt-get update && apt-get install -y maven
+
 COPY pom.xml ./
 COPY src ./src/
 
-RUN apt-get update && apt-get install -y maven
+# Copiar o build do Angular (injetado pelo pipeline)
+COPY src/main/resources/static ./src/main/resources/static
+
 RUN mvn clean package -DskipTests
 
 EXPOSE 8080
