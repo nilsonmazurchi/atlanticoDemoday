@@ -94,7 +94,21 @@ jobs:
           username: ${{ env.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
 
-      - name: Build and push unified Backend + Frontend image
+      # 🔹 Build do Frontend
+      - name: Build Frontend (Angular)
+        working-directory: ./Frontend
+        run: |
+          npm install
+          npm run build
+
+      # 🔹 Copiar o build do frontend para dentro do backend
+      - name: Copiar build do Frontend para o Backend
+        run: |
+          mkdir -p Backend/src/main/resources/static
+          cp -r Frontend/dist/* Backend/src/main/resources/static/
+
+      # 🔹 Build e Push da imagem Docker (somente o backend)
+      - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         id: build
         with:
