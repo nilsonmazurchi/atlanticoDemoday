@@ -1,4 +1,4 @@
-﻿package br.com.nilson.AppCadastroPessoas.Configuracao;
+package br.com.nilson.AppCadastroPessoas.Configuracao;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
