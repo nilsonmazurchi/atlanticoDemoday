@@ -19,8 +19,8 @@ WORKDIR /app
 # Instalar Maven
 RUN apt-get update && apt-get install -y maven
 
-COPY pom.xml ./
-COPY src ./src/
+COPY Backend/pom.xml ./
+COPY Backend/src ./src/
 
 # Copia o build Angular para dentro do backend antes do package
 COPY --from=frontend-builder /frontend/dist/cadastro-pessoas ./src/main/resources/static
