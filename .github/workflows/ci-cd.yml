@@ -80,17 +80,7 @@ jobs:
       docker_image_tag: ${{ steps.set-outputs.outputs.docker_image_tag }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Debug - Estrutura inicial
-        run: |
-          echo "=== Estrutura após checkout ==="
-          ls -la
-          echo "=== Backend ==="
-          ls -la Backend/ || echo "Backend não encontrado"
-          echo "=== Frontend ==="
-          ls -la Frontend/ || echo "Frontend não encontrado"
-
+        uses: actions/checkout@v4  
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -104,11 +94,40 @@ jobs:
           username: ${{ env.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
 
-     # 🔹 Remover BOM dos arquivos Java se necessário
-      - name: Remover BOM dos arquivos Java
-        working-directory: Backend
+     # 🔹 Build do Frontend
+      - name: Build Frontend
+        working-directory: ./Frontend
         run: |
-          find src -name "*.java" -type f -exec sed -i '1s/^\xEF\xBB\xBF//' {} \; || true         
+          npm ci
+          npm run build -- --configuration production
+
+      # 🔹 Preparar contexto do Backend com Frontend
+      - name: Preparar Backend com Frontend
+        run: |
+          # Criar diretório para build integrado
+          mkdir -p backend-with-frontend
+          
+          # Copiar todo o Backend
+          cp -r Backend/* backend-with-frontend/
+          
+          # Criar diretório para frontend build dentro do backend
+          mkdir -p backend-with-frontend/frontend-build
+          
+          # Copiar build do Angular
+          cp -r Frontend/dist/cadastro-pessoas/* backend-with-frontend/frontend-build/
+          
+          # Verificar estrutura
+          echo "=== Estrutura do backend-with-frontend ==="
+          ls -la backend-with-frontend/
+          echo "=== Arquivos Java ==="
+          find backend-with-frontend/src -name "*.java" | head -5
+          echo "=== Arquivos do Frontend ==="
+          ls -la backend-with-frontend/frontend-build/
+
+      # 🔹 Remover BOM se necessário
+      - name: Remover BOM dos arquivos Java
+        run: |
+          find backend-with-frontend -name "*.java" -type f -exec sed -i '1s/^\xEF\xBB\xBF//' {} \; || true         
 
       # 🔹 Build e Push da imagem Docker (somente o backend)
       - name: Build and Push Docker Image
