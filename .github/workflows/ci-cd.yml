@@ -105,9 +105,7 @@ jobs:
       - name: Copiar build do Frontend para o Backend
         run: |
           mkdir -p Backend/src/main/resources/static
-          cp -r Frontend/dist/cadastro-pessoas/* Backend/src/main/resources/static/
-          echo "Conteúdo de frontend-build:"
-          ls -la builder/
+          cp -r Frontend/dist/cadastro-pessoas/* Backend/src/main/resources/static/          
 
       # 🔹 Build e Push da imagem Docker (somente o backend)
       - name: Build and Push Docker Image
