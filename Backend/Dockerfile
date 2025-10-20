@@ -12,7 +12,7 @@ COPY src ./src/
 RUN mkdir -p src/main/resources/static
 
 # Copiar o build do Angular (injetado pelo pipeline)
-COPY src/main/resources/static ./src/main/resources/static
+COPY Backend/app/src/main/resources/static ./src/main/resources/static
 
 RUN mvn clean package -DskipTests
 
