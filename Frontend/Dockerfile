@@ -1,14 +1,14 @@
-﻿FROM node:20-alpine as builder
+﻿# FROM node:20-alpine as builder
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY package.json package-lock.json ./
-RUN npm install
+# COPY package.json package-lock.json ./
+# RUN npm install
 
-COPY . .
-RUN npm run build --configuration production
+# COPY . .
+# RUN npm run build --configuration production
 
-FROM nginx:alpine
-COPY --from=builder /app/dist/cadastro-pessoas /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# FROM nginx:alpine
+# COPY --from=builder /app/dist/cadastro-pessoas /usr/share/nginx/html
+# EXPOSE 80
+# CMD ["nginx", "-g", "daemon off;"]
