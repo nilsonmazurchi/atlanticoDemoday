@@ -82,6 +82,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug - Estrutura inicial
+        run: |
+          echo "=== Estrutura após checkout ==="
+          ls -la
+          echo "=== Backend ==="
+          ls -la Backend/ || echo "Backend não encontrado"
+          echo "=== Frontend ==="
+          ls -la Frontend/ || echo "Frontend não encontrado"
+
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
