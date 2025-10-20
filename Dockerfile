@@ -6,7 +6,7 @@ FROM node:20-alpine AS frontend-builder
 WORKDIR /frontend
 COPY package.json package-lock.json ./
 RUN npm install
-COPY Frontend/. .
+COPY Frontend/ .
 RUN npm run build --configuration production
 
 # ============================================================
