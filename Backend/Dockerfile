@@ -8,6 +8,10 @@ RUN apt-get update && apt-get install -y maven
 # Copiar todos os arquivos (incluindo pom.xml, src, e frontend-build)
 COPY . .
 
+# Criar diretório para arquivos estáticos e copiar frontend
+RUN mkdir -p src/main/resources/static
+COPY frontend-build/ ./src/main/resources/static/
+
 # Verificar se os arquivos estão presentes
 RUN echo "=== Verificando estrutura ===" && \
     ls -la && \
