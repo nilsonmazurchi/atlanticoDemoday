@@ -7,6 +7,8 @@ WORKDIR /frontend
 COPY Frontend/package*.json ./
 RUN npm install
 COPY Frontend/ .
+# Define mais memória pro build do Angular
+ENV NODE_OPTIONS=--max-old-space-size=4096
 RUN npm run build --configuration production
 
 # ============================================================
