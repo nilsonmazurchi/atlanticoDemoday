@@ -8,6 +8,9 @@ RUN apt-get update && apt-get install -y maven
 COPY pom.xml ./
 COPY src ./src/
 
+# Criar diretório para arquivos estáticos
+RUN mkdir -p src/main/resources/static
+
 # Copiar o build do Angular (injetado pelo pipeline)
 COPY src/main/resources/static ./src/main/resources/static
 
