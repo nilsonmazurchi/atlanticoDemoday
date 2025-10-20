@@ -1,25 +1,29 @@
-﻿FROM openjdk:21-jdk-slim
+﻿# Estágio 1: Build do Frontend
+FROM node:20-alpine as frontend-build
+
+WORKDIR /app
+
+# Copiar arquivos do frontend
+COPY ../../Frontend/package.json ../../Frontend/package-lock.json ./
+RUN npm ci
+
+COPY ../../Frontend/ .
+RUN npm run build -- --configuration production
+
+# Estágio 2: Build do Backend
+FROM openjdk:21-jdk-slim
 
 WORKDIR /app
 
 # Instalar Maven
 RUN apt-get update && apt-get install -y maven
 
-# Copiar arquivos do projeto
+# Copiar arquivos do backend
 COPY pom.xml .
 COPY src ./src
 
-# Criar diretório para arquivos estáticos e copiar frontend
-RUN mkdir -p src/main/resources/static
-COPY frontend-build/ ./src/main/resources/static/
-
-# Verificar se tudo foi copiado corretamente
-RUN echo "=== Verificando estrutura de arquivos ===" && \
-    ls -la && \
-    echo "=== Arquivos do Frontend ===" && \
-    ls -la src/main/resources/static/ && \
-    echo "=== Arquivos Java ===" && \
-    find src -name "*.java" | head -3
+# Copiar build do frontend do estágio anterior
+COPY --from=frontend-build /app/dist/cadastro-pessoas/ ./src/main/resources/static/
 
 RUN mvn clean package -DskipTests
 
