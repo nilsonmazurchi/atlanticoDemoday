@@ -94,18 +94,11 @@ jobs:
           username: ${{ env.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
 
-      # 🔹 Build do Frontend
-      - name: Build Frontend (Angular)
-        working-directory: ./Frontend
+     # 🔹 Remover BOM dos arquivos Java se necessário
+      - name: Remover BOM dos arquivos Java
+        working-directory: Backend
         run: |
-          npm install
-          npm run build -- --configuration production
-
-      # 🔹 Copiar o build do frontend para dentro do backend
-      - name: Copiar build do Frontend para o Backend
-        run: |
-          mkdir -p Backend/src/main/resources/static
-          cp -r Frontend/dist/cadastro-pessoas/* Backend/src/main/resources/static/          
+          find src -name "*.java" -type f -exec sed -i '1s/^\xEF\xBB\xBF//' {} \; || true         
 
       # 🔹 Build e Push da imagem Docker (somente o backend)
       - name: Build and Push Docker Image

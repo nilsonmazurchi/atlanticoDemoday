@@ -1,18 +1,34 @@
-﻿FROM openjdk:21-jdk-slim
+﻿# Estágio 1: Build do Frontend
+FROM node:20-alpine as frontend-builder
+
+WORKDIR /app
+
+COPY Frontend/package.json Frontend/package-lock.json ./
+RUN npm ci
+
+COPY Frontend/ .
+RUN npm run build -- --configuration production
+
+# Estágio 2: Build do Backend
+FROM openjdk:21-jdk-slim
 
 WORKDIR /app
 
 # Instalar Maven
 RUN apt-get update && apt-get install -y maven
 
-COPY pom.xml ./
-COPY src ./src/
+# Copiar arquivos do projeto Java
+COPY pom.xml .
+COPY src ./src
 
-# Criar diretório para arquivos estáticos
-RUN mkdir -p src/main/resources/static
+# Copiar build do frontend do estágio anterior
+COPY --from=frontend-builder /app/dist/cadastro-pessoas/ ./src/main/resources/static/
 
-# Copiar o build do Angular (injetado pelo pipeline)
-COPY Backend/src/main/resources/static ./src/main/resources/static
+# Verificar se os arquivos foram copiados
+RUN echo "=== Verificando arquivos estáticos ===" && \
+    ls -la src/main/resources/static/ && \
+    echo "Total de arquivos:" && \
+    find src/main/resources/static/ -type f | wc -l
 
 RUN mvn clean package -DskipTests
 
