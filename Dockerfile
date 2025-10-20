@@ -14,7 +14,7 @@ RUN npm run build --configuration production
 # ============================================================
 FROM openjdk:21-jdk-slim AS backend-builder
 
-WORKDIR /app
+WORKDIR /backend
 
 # Instalar Maven
 RUN apt-get update && apt-get install -y maven
