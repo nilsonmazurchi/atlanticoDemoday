@@ -1,46 +1,35 @@
-﻿# ===============================
-# Etapa 1 - Build do Frontend Angular
-# ===============================
+﻿# ============================================================
+# STAGE 1 — Build do Frontend Angular
+# ============================================================
 FROM node:20-alpine AS frontend-builder
 
 WORKDIR /frontend
-
-COPY package.json package-lock.json ./
+COPY Frontend/package*.json ./
 RUN npm install
-
-COPY . .
+COPY Frontend/ .
 RUN npm run build --configuration production
 
+# ============================================================
+# STAGE 2 — Build do Backend Spring Boot com Maven
+# ============================================================
+FROM maven:3.9.6-eclipse-temurin-21 AS backend-builder
 
-# ===============================
-# Etapa 2 - Build do Backend Spring Boot
-# ===============================
-FROM openjdk:21-jdk-slim AS backend-builder
+WORKDIR /backend
+COPY Backend/pom.xml .
+COPY Backend/src ./src
 
-WORKDIR /app
-
-# Instalar Maven
-RUN apt-get update && apt-get install -y maven
-
-COPY pom.xml ./
-COPY src ./src/
-
-# Copiar o build Angular gerado na etapa anterior para dentro do backend
+# Copia o build Angular para dentro do backend antes do package
 COPY --from=frontend-builder /frontend/dist/cadastro-pessoas ./src/main/resources/static
 
-# Empacotar o JAR
 RUN mvn clean package -DskipTests
 
-
-# ===============================
-# Etapa 3 - Container Final
-# ===============================
-FROM openjdk:21-jdk-slim
+# ============================================================
+# STAGE 3 — Runtime Image (final)
+# ============================================================
+FROM eclipse-temurin:21-jdk-jammy
 
 WORKDIR /app
-
-COPY --from=backend-builder /app/target/AppCadastroPessoas-0.0.1-SNAPSHOT.jar ./app.jar
+COPY --from=backend-builder /backend/target/AppCadastroPessoas-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
-
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
