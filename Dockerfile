@@ -4,21 +4,23 @@
 FROM node:20-alpine AS frontend-builder
 
 WORKDIR /frontend
-COPY Frontend/package*.json ./
+COPY package.json package-lock.json ./
 RUN npm install
-COPY Frontend/ .
-# Define mais memória pro build do Angular
-ENV NODE_OPTIONS=--max-old-space-size=4096
+COPY . .
 RUN npm run build --configuration production
 
 # ============================================================
 # STAGE 2 — Build do Backend Spring Boot com Maven
 # ============================================================
-FROM maven:3.9.6-eclipse-temurin-21 AS backend-builder
+FROM openjdk:21-jdk-slim AS backend-builder
 
-WORKDIR /backend
-COPY Backend/pom.xml .
-COPY Backend/src ./src
+WORKDIR /app
+
+# Instalar Maven
+RUN apt-get update && apt-get install -y maven
+
+COPY pom.xml .
+COPY src ./src
 
 # Copia o build Angular para dentro do backend antes do package
 COPY --from=frontend-builder /frontend/dist/cadastro-pessoas ./src/main/resources/static
@@ -28,10 +30,12 @@ RUN mvn clean package -DskipTests
 # ============================================================
 # STAGE 3 — Runtime Image (final)
 # ============================================================
-FROM eclipse-temurin:21-jdk-jammy
+FROM openjdk:21-jdk-slim
 
 WORKDIR /app
-COPY --from=backend-builder /backend/target/AppCadastroPessoas-0.0.1-SNAPSHOT.jar app.jar
+
+COPY --from=backend-builder /app/target/AppCadastroPessoas-0.0.1-SNAPSHOT.jar ./app.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+
+CMD ["java", "-jar", "app.jar"]
