@@ -106,6 +106,8 @@ jobs:
         run: |
           mkdir -p Backend/src/main/resources/static
           cp -r Frontend/dist/cadastro-pessoas/* Backend/src/main/resources/static/
+          echo "Conteúdo de frontend-build:"
+          ls -la frontend-build/
 
       # 🔹 Build e Push da imagem Docker (somente o backend)
       - name: Build and Push Docker Image
