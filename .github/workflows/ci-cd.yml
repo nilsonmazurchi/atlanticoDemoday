@@ -118,9 +118,13 @@ jobs:
           cat > backend-with-frontend/src/main/resources/application.properties << 'EOF'
           spring.application.name=AppCadastroPessoas
           
-          # Koyeb
+           # Koyeb Optimizations
           server.port=8080
           server.address=0.0.0.0
+          server.connection-timeout=120000
+          server.servlet.session.timeout=120m
+          server.compression.enabled=true
+          server.compression.mime-types=text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
           
           # H2
           spring.h2.console.enabled=true

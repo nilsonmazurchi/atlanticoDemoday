@@ -26,4 +26,9 @@ RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "target/AppCadastroPessoas-0.0.1-SNAPSHOT.jar"]
+# Health check para Koyeb
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8080/ || exit 1
+
+# Otimizações JVM para container
+CMD ["java", "-Xmx512m", "-Xms256m", "-Djava.security.egd=file:/dev/./urandom", "-jar", "target/AppCadastroPessoas-0.0.1-SNAPSHOT.jar"]
