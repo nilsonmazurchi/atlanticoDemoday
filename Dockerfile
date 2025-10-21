@@ -1,41 +1,36 @@
 ﻿# =========================
-# Etapa 1: Build do backend (Maven)
-# =========================
-FROM maven:3.9.8-eclipse-temurin-21 AS backend-build
-WORKDIR /app
-COPY Backend/pom.xml .
-COPY Backend/src ./src
-RUN mvn -B -DskipTests clean package
-
-# =========================
 # Etapa 2: Build do frontend (Angular)
 # =========================
-FROM node:18 AS frontend-build
+FROM node:20-alpine AS frontend-builder
 WORKDIR /frontend
 COPY Frontend/package*.json ./
-RUN npm ci
+RUN npm install
 COPY Frontend/ .
 RUN npm run build -- --configuration production
 
 # =========================
+# Etapa 1: Build do backend (Maven)
+# =========================
+FROM openjdk:21-jdk-slim AS backend-builder
+WORKDIR /app
+RUN apt-get update && apt-get install -y maven
+COPY Backend/pom.xml ./
+COPY Backend/src ./src
+# Copia o build Angular (independente do nome da pasta)
+COPY --from=frontend-builder /frontend/dist/* ./src/main/resources/static/
+RUN mvn clean package -DskipTests
+
+
+# =========================
 # Etapa 3: Imagem final com app completo
 # =========================
-FROM eclipse-temurin:21-jdk
+FROM openjdk:21-jdk-slim
 WORKDIR /app
 
 # Copia o JAR do backend
-COPY --from=backend-build /app/target/*.jar app.jar
-
-# Copia o frontend buildado (Angular) para servir como estático
-RUN mkdir -p /app/frontend
-COPY --from=frontend-build /frontend/dist/cadastro-pessoas /app/frontend
+COPY --from=backend-builder /app/target/AppCadastroPessoas-0.0.1-SNAPSHOT.jar ./app.jar
 
 # Expor porta padrão do Spring Boot
 EXPOSE 8080
 
-# Variáveis padrão
-ENV JAVA_OPTS="-Xms256m -Xmx512m"
-
-# Comando de execução
-ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
-
+CMD ["java", "-jar", "app.jar"]
