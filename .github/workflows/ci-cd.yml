@@ -109,7 +109,43 @@ jobs:
           
           # Copiar todo o Backend
           cp -r Backend/* backend-with-frontend/
+
+          # REMOVER CorsConfig temporariamente
+          rm -f backend-with-frontend/src/main/java/br/com/nilson/AppCadastroPessoas/Configuracao/CorsConfig.java
+          echo "✅ CorsConfig removido temporariamente"
           
+          # Application.properties SEM CORS config
+          cat > backend-with-frontend/src/main/resources/application.properties << 'EOF'
+          spring.application.name=AppCadastroPessoas
+          
+          # Koyeb
+          server.port=8080
+          server.address=0.0.0.0
+          
+          # H2
+          spring.h2.console.enabled=true
+          spring.h2.console.path=/h2-console
+          spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+          spring.jpa.show-sql=true
+          spring.jpa.hibernate.ddl-auto=update
+          spring.datasource.url=jdbc:h2:mem:pessCont
+          spring.datasource.username=sa
+          spring.datasource.password=
+          
+          # Static files
+          spring.web.resources.static-locations=classpath:/static/
+          spring.web.resources.add-mappings=true
+          
+          # NO CORS CONFIG - let Spring Boot handle it
+          
+          # Disable security
+          spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+          
+          # Logging
+          logging.level.org.springframework.web=DEBUG
+          logging.level.org.springframework.web.cors=TRACE
+          EOF
+
           # Criar diretório para frontend build dentro do backend
           mkdir -p backend-with-frontend/frontend-build
           

@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },  // Rota para a página principal
   { path: 'cadastro', component: PessoaCadastroComponent },  // Rota para cadastro
   { path: 'listagem', component: PessoaListaComponent },  // Rota para listagem
+  { path: '**', redirectTo: '' } // Fallback route
 
 ];
 
